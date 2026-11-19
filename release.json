@@ -1,6 +1,6 @@
 {
-  "release": "20261120-pdfnote1",
-  "builtAt": "2026-11-19T17:47:52.589Z",
+  "release": "20261120-mobile1",
+  "builtAt": "2026-11-19T18:04:34.385Z",
   "files": [
     {
       "path": "renault-mulgeum/advisor.css",
@@ -14,38 +14,38 @@
     },
     {
       "path": "renault-mulgeum/approach.js",
-      "bytes": 11951,
-      "sha256": "4b13b879811aaedc027445e41bb07e1dc297d4154dbe9322922437171c49005a"
+      "bytes": 11950,
+      "sha256": "fc15d5b2aab83d4aa8f2d7db90d7fc10731de05f9c3d587fd4d6d693c6482086"
     },
     {
       "path": "renault-mulgeum/approach_arkana.html",
-      "bytes": 19377,
-      "sha256": "47c41784f7f0ee6579bb2942f5f994670c2f7681517051630137ff39793ecf23"
+      "bytes": 19355,
+      "sha256": "ed559f3e3d306b9ab0925b6661f71ee7aa35ea49fd8be49438697c2a501e956f"
     },
     {
       "path": "renault-mulgeum/approach_filante.html",
-      "bytes": 19547,
-      "sha256": "ba54a0918e7e1458b69b8a74da2b3d3543128d0cf89d624cee7be6e41a89ea58"
+      "bytes": 19525,
+      "sha256": "8246b0f8b0f2f0be451827e4edc39b35b9e4ee61fbf38ab969a55964cfa4c468"
     },
     {
       "path": "renault-mulgeum/approach_koleos.html",
-      "bytes": 20046,
-      "sha256": "a2613ad4efe1bf716997bd518212aebe4e5b8f3a8bcb5209fc79a4bf72f8f473"
+      "bytes": 20024,
+      "sha256": "00f04f64458ecea053a4ad20bc615ae957d90bbd1bad54180866b1d0144f134e"
     },
     {
       "path": "renault-mulgeum/book_arkana.html",
-      "bytes": 12099,
-      "sha256": "71720f39491788cca25bd9ac3e8612292886ca0343d6cb3a3c40bd2c330bebd6"
+      "bytes": 12088,
+      "sha256": "095f96c620c8f94372c0414fcfe4462f4155cfedaa7b70dcecbfa1a07f2bb54a"
     },
     {
       "path": "renault-mulgeum/book_filante.html",
-      "bytes": 12269,
-      "sha256": "24a996a44d8c87dd8870278fc090ef64f6a7a07ea9813161f553e665869cb7a1"
+      "bytes": 12258,
+      "sha256": "fd905bfc0458278415ddaf4ae55e14b5f928e439f2892ae712d925ae14c5b291"
     },
     {
       "path": "renault-mulgeum/book_koleos.html",
-      "bytes": 12768,
-      "sha256": "5cdf0e5fbc0276f52e522e38e7805283cc3229a8753380343528b2a549ce9308"
+      "bytes": 12757,
+      "sha256": "4e5ddbef2e3e465ac04adfd8b8b429d7edb26c2b30e6a57b6af271129650e053"
     },
     {
       "path": "renault-mulgeum/browser-assist.js",
@@ -54,8 +54,8 @@
     },
     {
       "path": "renault-mulgeum/browser-help.html",
-      "bytes": 3705,
-      "sha256": "c5f76461d706fa0ac86c01b8d3405daa270662e0ed347b71b37d0a25880665fd"
+      "bytes": 3704,
+      "sha256": "9643de2be93352bc5c742c97179126534b023689bfbb9ca8e4e596ca71ef093e"
     },
     {
       "path": "renault-mulgeum/builder-commerce.js",
@@ -79,8 +79,8 @@
     },
     {
       "path": "renault-mulgeum/commercial-panel.js",
-      "bytes": 17354,
-      "sha256": "3b27a39850a441c3e4ae8fc449471c78d90a86b29a5fc87c32f2df4cc9a691ac"
+      "bytes": 17352,
+      "sha256": "52b130a86b17c0b0fdda50f04e39417f6af0f7c18b556ddd0048b7e2824f3b55"
     },
     {
       "path": "renault-mulgeum/customer-context.js",
@@ -89,8 +89,8 @@
     },
     {
       "path": "renault-mulgeum/find-renault.html",
-      "bytes": 7651,
-      "sha256": "eea067362574301d54922e2a1fb771b11333a4ffd4b44615753ed9e0f1f82c67"
+      "bytes": 7852,
+      "sha256": "a48dd1b440551ff2ab333bb4cd15e126cca6ec6dd3ad0f32a3e563dbb5eacc7b"
     },
     {
       "path": "renault-mulgeum/finder-core.js",
@@ -114,13 +114,13 @@
     },
     {
       "path": "renault-mulgeum/finder.css",
-      "bytes": 16732,
-      "sha256": "d026c77f1ccc87ecaea65a651c1b7344f37e6fb537bcef745a2e36a86a492c41"
+      "bytes": 21081,
+      "sha256": "4a50ee4bedfb220e861f8e3e72cf92fbbfaa003a18b4bdd2c41000d9e906a06e"
     },
     {
       "path": "renault-mulgeum/finder.js",
-      "bytes": 39130,
-      "sha256": "d8b4eb99f869644151145f4eacdacb05c61ede2aada35d1dfeace68191d3c1f9"
+      "bytes": 39429,
+      "sha256": "2f24eba94986a6948287d871aee2d833e5cdf1ae7dc12396f103f72042f27568"
     },
     {
       "path": "renault-mulgeum/guidebook.css",
@@ -129,28 +129,28 @@
     },
     {
       "path": "renault-mulgeum/guidebook.js",
-      "bytes": 10886,
-      "sha256": "579a5355887f3cedfbe277a5ef9da615e8f7caefb43e34f754126075dffe5ab6"
+      "bytes": 10884,
+      "sha256": "fc8b6968e2cb6c5ae11d37edd3bdfb7b79a83241b9989a6dcbed10cf00bf7d8c"
     },
     {
       "path": "renault-mulgeum/index.html",
-      "bytes": 44336,
-      "sha256": "1e8b13b3360456b032be348f37699c5d8cf9d735bf1a867cf5ded777c7fc0088"
+      "bytes": 44325,
+      "sha256": "16c1949107613ba02092efb811dc805c18c0cf97bb8647cdd7897cc898d8e3d9"
     },
     {
       "path": "renault-mulgeum/model_arkana.html",
-      "bytes": 44288,
-      "sha256": "933db2dc1a743aa0d5abd6f194aadaab2dcfaf2a5d13b00b0659c24438512571"
+      "bytes": 44277,
+      "sha256": "2da21094ec9ef662c9d04ab475fcba3fc59e026b5d037513bacdad64c2e8a1f8"
     },
     {
       "path": "renault-mulgeum/model_filante.html",
-      "bytes": 44316,
-      "sha256": "6b5915b0066d902c846c2c129b3e5ba669ef140c071ff95a37fa0c7c2cb392fa"
+      "bytes": 44305,
+      "sha256": "8ffd6a8bafc44949554eb697670e2e36252f22bb18bd259b390fbd911b57a3ba"
     },
     {
       "path": "renault-mulgeum/model_koleos.html",
-      "bytes": 44450,
-      "sha256": "2e0bdf83a690999f0ac9dc84d670abd48a782ed660cb28fce08d5f3f1629e053"
+      "bytes": 44439,
+      "sha256": "e018d0a9e9e540510f61429ff98980d1e7e5c34692990ddeda95681491d2e471"
     },
     {
       "path": "renault-mulgeum/money-input.js",
@@ -294,8 +294,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 13615,
-      "sha256": "845919aecab6debc1905681726f3c4cc4c3566bff3091c9fbbc5d2e7a6ea46ea"
+      "bytes": 13611,
+      "sha256": "541230b939daf8140aceb9adaef0d8b6c84caacb8efad7f8e84dc7b980a87899"
     },
     {
       "path": "sitemap.xml",
