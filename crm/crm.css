@@ -24,3 +24,5 @@
 #ledgerForm .margin-highlight small,#ledgerForm .margin-highlight strong,#ledgerForm .margin-highlight span{display:block}
 #ledgerForm .margin-highlight strong{font-size:26px;font-weight:800}
 @media(max-width:600px){#ledgerForm .ledger-section{padding:16px;border-width:2px}#ledgerForm .ledger-section>h3{margin:-16px -16px 18px;font-size:17px}#ledgerForm .service-cost-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}#ledgerForm .service-cost-row button{grid-column:1/-1}.ledger-filters select{flex:1 1 120px}}
+
+#attachEstimate>button{display:block;margin-top:22px}#attachEstimate>.fine{margin-top:10px}
