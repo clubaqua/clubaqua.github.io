@@ -7,4 +7,4 @@ const page = pages.includes(params.get('page')) ? params.get('page') : 'dashboar
 const frame = document.querySelector('#preview');
 frame.width = String(width);
 frame.height = '800';
-frame.src = page + '.html';
+frame.src = page + '.html?v=design-20261122b';
