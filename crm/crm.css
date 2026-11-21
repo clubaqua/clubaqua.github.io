@@ -26,3 +26,6 @@
 @media(max-width:600px){#ledgerForm .ledger-section{padding:16px;border-width:2px}#ledgerForm .ledger-section>h3{margin:-16px -16px 18px;font-size:17px}#ledgerForm .service-cost-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}#ledgerForm .service-cost-row button{grid-column:1/-1}.ledger-filters select{flex:1 1 120px}}
 
 #attachEstimate>button{display:block;margin-top:22px}#attachEstimate>.fine{margin-top:10px}
+
+/* Sandboxed mobile postcode search */
+.postcode-dialog{width:min(94vw,680px);max-width:94vw;height:min(85dvh,780px);padding:16px;box-sizing:border-box}.postcode-dialog iframe{width:100%;height:calc(100% - 105px);min-height:380px;border:0;background:white}.address-search-link{cursor:pointer}
