@@ -1,2 +1,1 @@
-/*! Renault Mulgeum © 2026 오승훈 */
-window.RenaultCRMConfig=Object.freeze({apiBase:""});
+window.RenaultCRMConfig=Object.freeze({apiBase:"https://gialghctlilvcxduwmgl.supabase.co/functions/v1/crm-api"});
