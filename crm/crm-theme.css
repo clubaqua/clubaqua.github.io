@@ -619,3 +619,4 @@ dialog::backdrop { background:var(--ink); opacity:.5; }
 .sms2-rates>div { border:1px solid var(--line); border-radius:8px; padding:16px; }
 .sms2-sender input { color:var(--text); }
 @media(max-width:768px) { .sms2-workspace { grid-template-columns:1fr; gap:12px; } .sms2-phone { max-width:100%; padding:12px; border-radius:12px; } }
+.app-header .brand { color:var(--surface); }
