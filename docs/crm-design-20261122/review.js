@@ -1,0 +1,10 @@
+'use strict';
+const params = new URLSearchParams(location.search);
+const widths = [375,768,1280];
+const pages = ['dashboard','customers','pipeline','ledger','commission','sms','sms2','reminders','settings'];
+const width = widths.includes(Number(params.get('width'))) ? Number(params.get('width')) : 375;
+const page = pages.includes(params.get('page')) ? params.get('page') : 'dashboard';
+const frame = document.querySelector('#preview');
+frame.width = String(width);
+frame.height = '1500';
+frame.src = page + '.html';
