@@ -620,3 +620,47 @@ dialog::backdrop { background:var(--ink); opacity:.5; }
 .sms2-sender input { color:var(--text); }
 @media(max-width:768px) { .sms2-workspace { grid-template-columns:1fr; gap:12px; } .sms2-phone { max-width:100%; padding:12px; border-radius:12px; } }
 .app-header .brand { color:var(--surface); }
+
+/* Compact work layout: preserve readable type and 44px touch targets. */
+.customer-actions-bar {
+ position:sticky; top:var(--app-header-height,110px); z-index:30;
+ padding:8px 0; background:var(--bg); border-bottom:1px solid var(--line);
+}
+.customer-phone { display:inline-flex; align-items:center; min-height:44px; font-variant-numeric:tabular-nums; }
+.customer-phone:hover { text-decoration:underline; }
+.modal .dialog-head { position:sticky; top:-20px; z-index:3; background:var(--surface); padding:12px 0; }
+@media(min-width:769px) {
+ .sidebar .app-header__inner { padding-top:8px; padding-bottom:8px; }
+ .sidebar nav.tabs { padding-bottom:6px; }
+ .main.container { padding-top:16px; }
+ .topbar { margin-bottom:12px; }
+ .topbar .page-date { margin-bottom:2px; }
+ .stats.kpi-grid { margin-bottom:12px; }
+ .stat.kpi { padding-top:12px; padding-bottom:12px; }
+ .panel.card,.sms-section.card { padding:16px; }
+ .panel-head { margin-bottom:12px; }
+ .customer-table th,.customer-table td { padding-top:8px; padding-bottom:8px; }
+}
+@media(max-width:768px) {
+ .customer-actions-bar { top:var(--app-header-height,66px); margin-bottom:8px; }
+ .customer-actions-bar h2 { margin:0; }
+ .customer-actions-bar + .toolbar { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:8px; margin:8px 0; }
+ .customer-actions-bar + .toolbar > input { grid-column:1/-1; }
+ .customer-actions-bar + .toolbar > select { min-width:0; width:100%; }
+ .customer-actions-bar + .toolbar > button { min-width:88px; }
+ .customer-table tbody tr { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:0 8px; padding:10px 12px; }
+ .customer-table td { padding:2px 0; align-items:center; }
+ .customer-table td:has([data-customer]) { grid-column:1/-1; margin-bottom:2px; padding-bottom:4px; border-bottom:0; }
+ .customer-table td:has([data-customer]) br { display:none; }
+ .customer-table td:has([data-customer]) small { margin-left:8px; font-weight:400; }
+ .customer-table td[data-label="연락처"]::before,.customer-table td[data-label="단계"]::before { content:none; }
+ .customer-table td[data-label="연락처"] { justify-content:flex-start; }
+ .customer-table td[data-label="단계"] { justify-content:flex-end; }
+ .customer-table td[data-label="관심 차량"],.customer-table td[data-label="다음 연락"],.customer-table td[data-label="계약일"],.customer-table td[data-label="출고일"] { grid-column:1/-1; }
+ .customer-table td[data-label="관심 차량"] { padding-bottom:6px; }
+ .customer-table td[data-label="다음 연락"],.customer-table td[data-label="계약일"],.customer-table td[data-label="출고일"] { font-size:13px; }
+ .customer-table td.cell-empty { display:none; }
+ .customer-table td.bulk-column { top:12px; right:12px; }
+ .customer-table td:has([data-customer]) button { padding-right:0; }
+ .modal .dialog-head { top:-16px; }
+}

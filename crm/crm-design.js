@@ -48,6 +48,7 @@
     if(extraActive) more.setAttribute('aria-current','page'); else more.removeAttribute('aria-current');
     all('.panel, .form-section, .sms-section, .login-card').forEach(el => el.classList.add('card'));
     all('.panel h2, .form-section > h3, .sms-section > h3').forEach(el => el.classList.add('card-title'));
+    $('#newCustomer')?.closest('.panel-head')?.classList.add('customer-actions-bar');
     all('.filters').forEach(el => el.classList.add('toolbar'));
     all('.muted, .fine').forEach(el => el.classList.add('helper'));
     all('.form-grid > label, .settings-grid label').forEach(el => el.classList.add('field'));
@@ -71,6 +72,7 @@
       const headings = all('thead th',table).map(el=>el.textContent.trim()||'선택');
       all('tbody tr',table).forEach(row => all('td',row).forEach((cell,index) => {
         if(!cell.hasAttribute('data-label')) cell.dataset.label = headings[index]||'';
+        cell.classList.toggle('cell-empty',cell.textContent.trim()==='—');
         if(/수입|비용|순이익|금액|입금/.test(headings[index]) && !/기준/.test(headings[index])) cell.classList.add('num','amount');
       }));
     });
@@ -108,4 +110,9 @@
   const observer=new MutationObserver(schedule);
   const observe=()=> { observer.observe($('#app'),{childList:true,subtree:true,attributes:true,attributeFilter:['hidden']}); all('dialog').forEach(el=>observer.observe(el,{childList:true,subtree:true})); observer.observe(document.body,{childList:true}); };
   enhance();observe();
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(entries => {
+      document.documentElement.style.setProperty('--app-header-height', entries[0].target.getBoundingClientRect().height + 'px');
+    }).observe($('.app-header'));
+  }
 })();
