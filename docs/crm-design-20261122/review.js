@@ -6,5 +6,5 @@ const width = widths.includes(Number(params.get('width'))) ? Number(params.get('
 const page = pages.includes(params.get('page')) ? params.get('page') : 'dashboard';
 const frame = document.querySelector('#preview');
 frame.width = String(width);
-frame.height = '1500';
+frame.height = '800';
 frame.src = page + '.html';
