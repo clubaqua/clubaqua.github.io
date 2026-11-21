@@ -1,1 +1,2 @@
-'use strict';(()=>{const API=window.kakao?.Postcode||window.daum?.Postcode;if(!API)return;document.getElementById('status').hidden=true;new API({width:'100%',height:'100%',oncomplete(data){parent.postMessage({type:'crm-address',nonce:location.hash.slice(1),postcode:String(data.zonecode||''),address:String(data.userSelectedType==='R'?data.roadAddress:data.jibunAddress)},'https://clubaqua.github.io');}}).embed(document.getElementById('postcode'));})();
+'use strict';
+// External postcode scripts are no longer loaded on the CRM origin.
