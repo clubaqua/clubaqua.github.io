@@ -1,6 +1,6 @@
 {
-  "release": "20261120-cleanup1",
-  "builtAt": "2026-11-20T04:20:20.675Z",
+  "release": "release-20261122233545",
+  "builtAt": "2026-11-22T23:35:49.926Z",
   "files": [
     {
       "path": "renault-mulgeum/advisor.css",
@@ -14,38 +14,38 @@
     },
     {
       "path": "renault-mulgeum/approach.js",
-      "bytes": 12038,
-      "sha256": "1839cdffe7f9c2317779a0b677dcb806ad9bda09540d87e05482c3cf3bc361df"
+      "bytes": 13612,
+      "sha256": "0908a0af0706f1144e3c9e1914f7aa5fc51b96534443458b09e019f23cb9aa7d"
     },
     {
       "path": "renault-mulgeum/approach_arkana.html",
-      "bytes": 19259,
-      "sha256": "dbb566c4c540e8a090f4827e35a87685a9954a6a9200b945de71ee21ca7dac8c"
+      "bytes": 19523,
+      "sha256": "23e798f2964c37131d57412a8e6815d7bf2d7811d2f28eacf607f58e54292f28"
     },
     {
       "path": "renault-mulgeum/approach_filante.html",
-      "bytes": 19429,
-      "sha256": "03333a98f2969bee1d8fe171aeefa455558f175618a871d3efc01257baff1545"
+      "bytes": 19693,
+      "sha256": "d9cf65e877915e98cec0e7d073844e6775480c0559f09a7c328761c54c6fb817"
     },
     {
       "path": "renault-mulgeum/approach_koleos.html",
-      "bytes": 19928,
-      "sha256": "f5df49e6bec40ea34c1f7e52dc15a9b975730df81c7b712833398c7ac3e1bd94"
+      "bytes": 20192,
+      "sha256": "0de95dd969555f6fcc7cf66f823568ed7fb9fb7fc50182f2022aa5afe83e1938"
     },
     {
       "path": "renault-mulgeum/book_arkana.html",
-      "bytes": 12099,
-      "sha256": "e12d3200f0c3fbb4a11257b94c0dc6a698d2f282ac146d3cff1abb9def750ea1"
+      "bytes": 12155,
+      "sha256": "b0454393ce142f8af4c93e2fb1e9209acaa29b7be4a720f0ec3218bd1e5b004a"
     },
     {
       "path": "renault-mulgeum/book_filante.html",
-      "bytes": 12269,
-      "sha256": "491a73023d7bf0ff8d830ba10f6527a6824c4c059d1f086196f968b9e5df1830"
+      "bytes": 12325,
+      "sha256": "01ef1b1b4f17433f8a5d153a41f0d9f2c9819532d5edcb122a01950cf6d9f065"
     },
     {
       "path": "renault-mulgeum/book_koleos.html",
-      "bytes": 12768,
-      "sha256": "5565ee83e9a706a0045d206e5d48335232ebf27d17641eb605f0219bed23aa3c"
+      "bytes": 12824,
+      "sha256": "bb6030b8338c459e52353bac287ca8eb8bcc8471084dc435b5d1986f6855993a"
     },
     {
       "path": "renault-mulgeum/browser-assist.js",
@@ -54,13 +54,13 @@
     },
     {
       "path": "renault-mulgeum/browser-help.html",
-      "bytes": 3705,
-      "sha256": "a99ae0083c754c8453fc5cee7b158020cde56902f330db69d39596ec96fb3c32"
+      "bytes": 3710,
+      "sha256": "fe6be85570575de1c7cc475b1c759725f4337480c139a8eaffd572bd0ea2e672"
     },
     {
       "path": "renault-mulgeum/builder-commerce.js",
-      "bytes": 4755,
-      "sha256": "a36bb993893a2fe2ed6b64f3c547f3cd79fff33d06d295a165524c531ef341be"
+      "bytes": 6073,
+      "sha256": "a2d8db9b96782bd2044185aec4fcff00a124e9e7ea9ea0e2ccc00ef89d48fdfd"
     },
     {
       "path": "renault-mulgeum/builder-print.css",
@@ -69,18 +69,23 @@
     },
     {
       "path": "renault-mulgeum/builder-print.js",
-      "bytes": 7102,
-      "sha256": "234c257d94e47d12accfcd92e1b68a6148b1b289438510d400ae4079df6347d6"
+      "bytes": 8233,
+      "sha256": "03340f7779fff4ac9ac14a1af46fb0d836d746a468456fd50afe3cad4d12a4e0"
     },
     {
       "path": "renault-mulgeum/commercial-panel.css",
-      "bytes": 12935,
-      "sha256": "61722d859206994fd5b43545d5feab4cd469dac094d5e465a7eca0df7b6d73d2"
+      "bytes": 16840,
+      "sha256": "35501bd580aaa7ebc05cb062197ca9fede42309cdb3f0c1a973318d9dd869cfe"
     },
     {
       "path": "renault-mulgeum/commercial-panel.js",
-      "bytes": 18046,
-      "sha256": "61fba8cc1eb1393738185bcfd0e96967e73c400103963831afbd103d21528195"
+      "bytes": 20449,
+      "sha256": "a4a5ac3e6c8abefc4421957e26be5ec3261edb606b71f2391ece258f2a86a94f"
+    },
+    {
+      "path": "renault-mulgeum/crm-bridge.js",
+      "bytes": 3731,
+      "sha256": "1dd3cd06c58da1f309fe49b4bfb9e1b05e0ae04c9095649ab999bcf86b0406ad"
     },
     {
       "path": "renault-mulgeum/customer-context.js",
@@ -89,18 +94,18 @@
     },
     {
       "path": "renault-mulgeum/find-renault.html",
-      "bytes": 7865,
-      "sha256": "cac8a7d1be1c15f2b1d5f320e065121f4e2d2b75f096ddd454d5441704c75fc2"
+      "bytes": 8084,
+      "sha256": "0a53db2feaed668ef3d22f41da88dcc8b8b5b6fe916cf6874e5309d38712fcc0"
     },
     {
       "path": "renault-mulgeum/finder-core.js",
-      "bytes": 33791,
-      "sha256": "c90513b07ab6ab7539f6e2cc5e7ef6abedb3e1e4f7878c3d65862733edbae872"
+      "bytes": 41343,
+      "sha256": "0cb19629b687863b644b66bb99df8a72e9815e8c378b986b1c7bfe0dab951b19"
     },
     {
       "path": "renault-mulgeum/finder-leads.js",
-      "bytes": 1454,
-      "sha256": "7bd249c7368c6763495c89eaa0f01e0e0d34aef3ddd57213c71a891c99db0708"
+      "bytes": 1578,
+      "sha256": "1b0317fc5388e0e7a6f175223b23a6ee2d351153cbf4fc8fa0cff837cd737bc4"
     },
     {
       "path": "renault-mulgeum/finder-print.css",
@@ -109,18 +114,18 @@
     },
     {
       "path": "renault-mulgeum/finder-print.js",
-      "bytes": 6226,
-      "sha256": "2d2785d6659d85d8312ee21aaaa46a34faaf917ff0aa201e2ece7791023bf4cf"
+      "bytes": 7273,
+      "sha256": "54c14e9ceb6c9a0c911443ac55f092eb6adf9ef997ca06c6ab89a4876a3a57b4"
     },
     {
       "path": "renault-mulgeum/finder.css",
-      "bytes": 21081,
-      "sha256": "4a50ee4bedfb220e861f8e3e72cf92fbbfaa003a18b4bdd2c41000d9e906a06e"
+      "bytes": 21998,
+      "sha256": "f2167bcc5bbd6972dcb6f023d5c7717edbc8412349ff233992a0996b8659c46c"
     },
     {
       "path": "renault-mulgeum/finder.js",
-      "bytes": 39232,
-      "sha256": "f8dd7c83e6dabec4f89ed52f2ad1fd13c7c63484b95fbe912129e9256a813e63"
+      "bytes": 41596,
+      "sha256": "99fa9ad7d2ed99a5f7bbb3812a397a6d84326183e0c6ef58e5f38c78c6e5098c"
     },
     {
       "path": "renault-mulgeum/guidebook.css",
@@ -129,28 +134,28 @@
     },
     {
       "path": "renault-mulgeum/guidebook.js",
-      "bytes": 10886,
-      "sha256": "ff7b6bb9a322bea249bcd74b1a4978898b287ff6091f3a0957651eeedef3af6c"
+      "bytes": 10896,
+      "sha256": "d14ef4d51ceca8ad70723476d7dbac368a7693c603ec2497fd28622c48de708c"
     },
     {
       "path": "renault-mulgeum/index.html",
-      "bytes": 43824,
-      "sha256": "208dca3bdfa9a773b4a0d25d93573988101c81021ee507f2b62978fdba6232de"
+      "bytes": 43879,
+      "sha256": "5f1ad384b6498223153efa630e8b157b60e42372d939e3e9db4615c44ce5a1db"
     },
     {
       "path": "renault-mulgeum/model_arkana.html",
-      "bytes": 43776,
-      "sha256": "9968f3c2153b597ef4f3eb2b38be66ad6f536f6fe46394c75a975373094fd979"
+      "bytes": 43831,
+      "sha256": "75d946739fd095b6ae4800a880c5026be4f90c27c155711924b361b4740fc33a"
     },
     {
       "path": "renault-mulgeum/model_filante.html",
-      "bytes": 43804,
-      "sha256": "ea24a9f636b72e7c2544b0ddb34f5e0041bb2574a4b9f1a25d439200f816721f"
+      "bytes": 43859,
+      "sha256": "72e5d7c0aa117d0c0dccc7437ee10037127ef68101655f17b43285797badfdb8"
     },
     {
       "path": "renault-mulgeum/model_koleos.html",
-      "bytes": 43938,
-      "sha256": "d9d83c9af28ff524ea6ca45562f6cdfd5ad03a358677631b1e36f3a9394dd571"
+      "bytes": 43993,
+      "sha256": "631ce68072a7af7fa9b15ad953a22994ef648a025efa2922139715e3cb886ad0"
     },
     {
       "path": "renault-mulgeum/money-input.js",
@@ -159,13 +164,13 @@
     },
     {
       "path": "renault-mulgeum/purchase-flow-core.js",
-      "bytes": 19878,
-      "sha256": "239b614d6c3f9cc38707383b3e732da855966edd9662ed84966509fc93c1e878"
+      "bytes": 23119,
+      "sha256": "7ea45449746405d4cf8b7a8ae5c9347be124b6fb1b035c6da092425260431cbb"
     },
     {
       "path": "renault-mulgeum/purchase-policy.js",
-      "bytes": 28094,
-      "sha256": "6c220157115b1f4a37513f99a3afb4d3f22d510ec81dd959fc3d45044eea13ab"
+      "bytes": 29980,
+      "sha256": "5dae90ad128eb7572406bb1511d2741017b2ff35ffb4a29233b4dfb30fd23765"
     },
     {
       "path": "renault-mulgeum/site-improvements.css",
@@ -184,8 +189,8 @@
     },
     {
       "path": "renault-mulgeum/vehicle-notices.js",
-      "bytes": 4083,
-      "sha256": "9da2134e2b3f156222049ac8ec7ccfac5d5e155126af08e1b67b263ea40e6765"
+      "bytes": 4133,
+      "sha256": "0741613b9699c56bc2f64b7ecabe4e4dd2bbeadcc9c2490c7d748353c5744e19"
     },
     {
       "path": "renault-mulgeum/assets/advisor-oh-seunghun.svg",
@@ -253,14 +258,234 @@
       "sha256": "b54d75451b3c56f12b6c9c2b65c810cb6db347fef89fb8d87d6fbe096bafd506"
     },
     {
+      "path": "crm/address-search.html",
+      "bytes": 525,
+      "sha256": "dc6192d6a399f6c7b3a76c8078925b1128028ff289cfff472343a31733e1df64"
+    },
+    {
+      "path": "crm/address-search.js",
+      "bytes": 143,
+      "sha256": "054b8b76e81bee02a5fa82cc9ee1f081a5e771ed0ce2df5ca0f6f2bf307de20e"
+    },
+    {
+      "path": "crm/brand-logos.json",
+      "bytes": 150234,
+      "sha256": "9f54b8716bb5316b814cd5174314f943baa77a925582eb50584189fd81cd2687"
+    },
+    {
+      "path": "crm/config.js",
+      "bytes": 243,
+      "sha256": "4d12aba9e2faf0bb9f75323ba8c54e1653bc8022963f573f616a28f9d417c186"
+    },
+    {
+      "path": "crm/crm-backup.js",
+      "bytes": 3761,
+      "sha256": "c9c020bb6c1932f9ac9ef12841ccfcbb69d53fdabccccd5d8e5d1e4d9239d1a4"
+    },
+    {
+      "path": "crm/crm-bulk-edit.css",
+      "bytes": 687,
+      "sha256": "c71aeb3834345a685027dc867c7e0fd31b7e68c277bd5b520d858bc8c6898344"
+    },
+    {
+      "path": "crm/crm-bulk-edit.js",
+      "bytes": 3197,
+      "sha256": "b270aef22edd5e5d475729ff4bc869b4cbd35fb2c4068a55bd01e528bb382131"
+    },
+    {
+      "path": "crm/crm-customer-list.css",
+      "bytes": 1594,
+      "sha256": "506637ddd5ce7853818953ed8d98923800a0a110a72df57c84583923c8ff1cb4"
+    },
+    {
+      "path": "crm/crm-customer-list.js",
+      "bytes": 2809,
+      "sha256": "91ff1dd8cff419235f19de6f41188185edd654454204c02d2712757b464d89a4"
+    },
+    {
+      "path": "crm/crm-delivery.css",
+      "bytes": 4178,
+      "sha256": "9c73f3737aa077b4fb695d37b1542ea88ee8f65f32bb845f1f3dc7dd1ed49330"
+    },
+    {
+      "path": "crm/crm-delivery.js",
+      "bytes": 4158,
+      "sha256": "8f91b3dad54baa0c9d1d87c46b382254289235f1d4429ff37d8e8e9e4e5c0850"
+    },
+    {
+      "path": "crm/crm-design.js",
+      "bytes": 6786,
+      "sha256": "738e740eab09a1239fe214afb8ad4b6ece94575d7f02efe80e781ecdce623e2b"
+    },
+    {
+      "path": "crm/crm-export.css",
+      "bytes": 817,
+      "sha256": "dc92d982fc7a996ae5292424cfb31a8431b5c10b44aa8f96c1fd4884d305d074"
+    },
+    {
+      "path": "crm/crm-export.js",
+      "bytes": 10343,
+      "sha256": "5d2f6de8c8e0ce3e6d66800d209c7c5f6cd3a83dedf0541ef72bfd1d2554acea"
+    },
+    {
+      "path": "crm/crm-finance.js",
+      "bytes": 17307,
+      "sha256": "0c676f78cabb2401b71ddffad97fe04210b74d502d1db7de5a692a26ab7f5abb"
+    },
+    {
+      "path": "crm/crm-form.js",
+      "bytes": 11151,
+      "sha256": "bfe35f6dd753ee7dbaaa0a5abee1d4027a4db2a83031f2810aee3562f2622671"
+    },
+    {
+      "path": "crm/crm-history.css",
+      "bytes": 655,
+      "sha256": "76f820eca23f4ed2e294b73bd6a6b2e5601749bd108f298af499cb84d651c01c"
+    },
+    {
+      "path": "crm/crm-history.js",
+      "bytes": 3186,
+      "sha256": "4164f8083f9639b7f199324eda655b73739ad7f7e38214e2c7e5da3d4016bb62"
+    },
+    {
+      "path": "crm/crm-import-core.js",
+      "bytes": 9541,
+      "sha256": "e03d1fec76e9d19e161ab020f4b75adad97426307a2426e4d98070bee74c68a5"
+    },
+    {
+      "path": "crm/crm-import.css",
+      "bytes": 1915,
+      "sha256": "ee7ba671075ffd9ee32a0ab971623742925616c91979a3f1e4013c6943a6fd91"
+    },
+    {
+      "path": "crm/crm-import.js",
+      "bytes": 11195,
+      "sha256": "f23ab960052846c272fd49b8248bf3c0387992997a159957415edee0193c7a13"
+    },
+    {
+      "path": "crm/crm-ledger-ui.css",
+      "bytes": 4017,
+      "sha256": "39114ec4dff51b62bb2f401afb3f306007906f3c2c8f25d41448131c13cd0183"
+    },
+    {
+      "path": "crm/crm-ledger-ui.js",
+      "bytes": 12310,
+      "sha256": "be1d6bbb3809fde5ff06d5fd054c4cbe720dd39a90782d07e232cf99690ae464"
+    },
+    {
+      "path": "crm/crm-mms-image.js",
+      "bytes": 2690,
+      "sha256": "df0d821e409f1ed83801ffd8353d91b7fa22e5f63d8c4fa2dcd3ce8b31912a15"
+    },
+    {
+      "path": "crm/crm-pin.css",
+      "bytes": 569,
+      "sha256": "6b6f11c9d69380da13dadc80c88f673a26b0159d8ed70a8d5944484f406126bc"
+    },
+    {
+      "path": "crm/crm-pin.js",
+      "bytes": 2461,
+      "sha256": "7b17ffff6cc2bfa8fb6abf27ddfe87a8749838bc20d1276fef76622134bb99c6"
+    },
+    {
+      "path": "crm/crm-session.js",
+      "bytes": 1595,
+      "sha256": "99430d10091332d4711882f1b38075161fb134642b907f0ad9b026ab409c2923"
+    },
+    {
+      "path": "crm/crm-sms.js",
+      "bytes": 9649,
+      "sha256": "1787fc2b3701205b0a4dc9bc04a006cbd6a8ee62cfb045d1560075a4271f4166"
+    },
+    {
+      "path": "crm/crm-sms2.js",
+      "bytes": 19684,
+      "sha256": "dea0a725413b425f2cb03363acd7f3901d4af35ff8416652ade35fcb1754b577"
+    },
+    {
+      "path": "crm/crm-theme.css",
+      "bytes": 22339,
+      "sha256": "78aff40e270288d69e652a2fb0d03f48b06f46e0b1653cdc36f1d613d7f28ffe"
+    },
+    {
+      "path": "crm/crm-vehicle.js",
+      "bytes": 3457,
+      "sha256": "7c4214ba3789b6e156dfe6e0aebb9390fbb9da086e5e702bd22af683dcf136f7"
+    },
+    {
+      "path": "crm/crm-workflow.js",
+      "bytes": 6086,
+      "sha256": "413378e639109582b04b460c8290558fb3817e1298e274575db89b885b0be68e"
+    },
+    {
+      "path": "crm/crm.css",
+      "bytes": 22968,
+      "sha256": "d8abdd2f04b16f35f3ca5c4170500beca09a38bef0ae7aef2abb1379cddc905e"
+    },
+    {
+      "path": "crm/crm.js",
+      "bytes": 31765,
+      "sha256": "8a5b8df41d4bf2af7a48d9c963ad9963fbfc2219ee7b95709a386b7480172ee1"
+    },
+    {
+      "path": "crm/domain.js",
+      "bytes": 11388,
+      "sha256": "2f994adb992a1930c5864ca497c952308eb0bee5146637aef9505f6d823e66ca"
+    },
+    {
+      "path": "crm/ebest-bridge-v2.1.zip",
+      "bytes": 9915,
+      "sha256": "62d2fe93b22ec1081b0e05229ff7036bd2f2bb319173471bbc9f4a62bed74f7a"
+    },
+    {
+      "path": "crm/ebest-bridge-v2.2.zip",
+      "bytes": 11288,
+      "sha256": "0ee4abaecdded5c976afe6e8701768a4ce47de052c3516a8ed5e37f2a4308dbe"
+    },
+    {
+      "path": "crm/ebest-bridge-v2.zip",
+      "bytes": 9924,
+      "sha256": "68a1c7ad037471e258a6b3e152af1c2902eef8857e7a664d813bed91efb535d1"
+    },
+    {
+      "path": "crm/ebest-bridge.zip",
+      "bytes": 5761,
+      "sha256": "4d5c6ab833932702f3314e6ecbacd943cea0ff82d7d857104521b601e17de97c"
+    },
+    {
+      "path": "crm/index.html",
+      "bytes": 8134,
+      "sha256": "7ac69bdf6d6b75780ee16625d1019c0654549c58b2b9fa4291ae6079a2b12f6a"
+    },
+    {
+      "path": "crm/postcode-popup.html",
+      "bytes": 1795,
+      "sha256": "b84fb4d4587adccd2859a40383adb470d085fae4f524cd588fa427cf2e39dcf1"
+    },
+    {
+      "path": "crm/postcode-search.html",
+      "bytes": 971,
+      "sha256": "fe2432c24193a70d8f7eb80521b21d0d808e2974d159d53bb97e569f05212190"
+    },
+    {
+      "path": "crm/sms-setup.html",
+      "bytes": 3607,
+      "sha256": "8de6a2af1ebf981ecb268a9ea673ce645ff099c00fe90aeca744622d8debf6a0"
+    },
+    {
+      "path": "crm/sms2-setup.html",
+      "bytes": 5192,
+      "sha256": "0fd2f503b699f2739c07ea14f94a1137c3c49edac05b8b570a656b6d870a0687"
+    },
+    {
       "path": "renault-mulgeum/data/guidebook.json",
       "bytes": 145763,
       "sha256": "c93449eadd204b5da7e8e3422469f02bdaa3a3199d8aacee7b7da54dc119a7cf"
     },
     {
       "path": "renault-mulgeum/data/monthly-offers.json",
-      "bytes": 32739,
-      "sha256": "3a5edd93bc7c8274bf949e9a06f6423a7a9519c10d369e49dc64fcb075b06615"
+      "bytes": 33269,
+      "sha256": "3313966181f4f6771782c0e86e7df22d06cabd3b9516394711dd3f39144a0484"
     },
     {
       "path": "renault-mulgeum/data/approach-filante.json",
@@ -279,8 +504,8 @@
     },
     {
       "path": "renault-mulgeum/sitemap.xml",
-      "bytes": 1011,
-      "sha256": "774362b91aebad20237b70601162fcbaabcd87dfd8fc07fdf716dc405ac55550"
+      "bytes": 1012,
+      "sha256": "b1ddbdb0b8dd74eaef33273dc09e6f3776101080306c05335c31547c4ae5f58b"
     },
     {
       "path": "robots.txt",
@@ -294,18 +519,23 @@
     },
     {
       "path": "index.html",
-      "bytes": 13615,
-      "sha256": "33ff78b63a541c8581c742ecbf6763dd312277c90852193b4bc7801eae360f47"
+      "bytes": 14550,
+      "sha256": "133ff57364ecb7730f4e521f4dab1ea0b011121739a845cae876064f3d92b2f6"
     },
     {
       "path": "sitemap.xml",
-      "bytes": 187,
-      "sha256": "9c82df0189791dbaaf0352ff210f4d08e653b66529f58b204473b6a25d8a3bed"
+      "bytes": 188,
+      "sha256": "49b85a48ae616d9df1da69110fc5ceaaece4541b6b07adafd822f2ad21959f91"
     },
     {
       "path": ".nojekyll",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "crm/robots.txt",
+      "bytes": 26,
+      "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1"
     },
     {
       "path": "NOTICE.txt",
