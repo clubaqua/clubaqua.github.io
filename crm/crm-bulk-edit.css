@@ -1,0 +1,7 @@
+.bulk-edit-dialog{width:min(520px,calc(100vw - 32px));max-height:85dvh;overflow:auto}
+.bulk-edit-dialog fieldset{border:1px solid #d4d4ca;border-radius:8px;padding:16px;display:grid;gap:12px}
+.bulk-edit-dialog .bulk-edit-choice{display:flex;align-items:center;gap:10px;margin:0;padding:8px;font-weight:600}
+.bulk-edit-choice input[type=radio]{width:18px;height:18px;min-height:0;margin:0;accent-color:#278549}
+.bulk-edit-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:20px}
+.customer-list-actions #editSelectedCustomers{background:#ffcc00;color:#171813;border-color:#e5b800;font-weight:700}
+.customer-list-actions #editSelectedCustomers:disabled{opacity:.45;cursor:not-allowed}
