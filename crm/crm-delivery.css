@@ -35,3 +35,12 @@
  .table-wrap:has(.customer-identity-cell) .bulk-column{width:40px;padding-left:12px;padding-right:8px;text-align:center}
  .table-wrap:has(.customer-identity-cell) .bulk-column input{display:block;margin:0 auto}
 }
+
+.customer-insurance-badge{display:inline-block;border:1px solid #927400;background:#fff3b5;color:#574400;border-radius:3px;padding:2px 7px;font-size:12px;font-weight:800;line-height:1.5;white-space:nowrap}
+.customer-vehicle .customer-license-plate{display:inline-block;justify-self:start;padding:3px 10px;border:2px solid #171717;border-radius:5px;background:#fff;color:#111;font-size:15px;font-weight:800;letter-spacing:.5px;line-height:1.4;white-space:nowrap}
+.purchased-trim-editor{display:flex;align-items:center;gap:6px;min-width:0}
+.purchased-trim-editor>[hidden]{display:none!important}
+.purchased-trim-editor input,.purchased-trim-editor select{min-width:0;width:100%;flex:1}
+.purchased-trim-editor button{flex:none;padding:10px;white-space:nowrap}
+#customerForm .delivery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:650px){#customerForm .delivery-grid{grid-template-columns:1fr}}
