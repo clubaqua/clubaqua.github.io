@@ -24,6 +24,7 @@ function schedule(date,c={}){
  if(excluded(c)){box.querySelector('#crmMaintenance').innerHTML='<p class="maintenance-not-applicable">7년14만큼 대상차종 아님</p>';box.querySelector('.fine')?.setAttribute('hidden','');}
  return template.innerHTML;
 }
+function maintenanceBadge(c){const no=excluded(c);return '<span class="maintenance-customer-badge '+(no?'maintenance-customer-badge--excluded':'maintenance-customer-badge--eligible')+'">'+(no?'7년14만큼 해당없음':'7년14만큼 대상고객')+'</span>';}
 function refreshMaintenance(){
  const form=document.querySelector('#customerForm'),target=form?.querySelector('#crmMaintenance');if(!target)return;
  const no=form.elements.maintenanceExcluded?.checked;
@@ -43,5 +44,5 @@ function prepareDeliverySave(c,form){
  c.notes=notes;c.maintenanceExcluded=checked;c.sourceSalesman=name;c.isTransferred=transferred;return c;
 }
 for(const type of ['input','change'])document.addEventListener(type,e=>{if(e.target.matches('#customerForm [name="deliveryDate"],#customerForm [name="maintenanceExcluded"]'))refreshMaintenance();if(e.target.matches('#customerForm [name="isTransferred"],#customerForm [name="name"]')){const form=e.target.closest('form');syncTransferHeader({name:form.elements.name.value,isTransferred:form.elements.isTransferred.checked});}});
-Object.assign(formUI,{schedule,originalSalesperson,maintenanceExcluded:excluded,isTransferred,transferredBadge,syncTransferHeader,prepareDeliverySave});
+Object.assign(formUI,{maintenanceBadge,schedule,originalSalesperson,maintenanceExcluded:excluded,isTransferred,transferredBadge,syncTransferHeader,prepareDeliverySave});
 })();

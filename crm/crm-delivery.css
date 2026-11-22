@@ -9,3 +9,8 @@
 .customer-transfer-fields .transfer-checkbox input{width:18px;height:18px;min-height:0;margin:0;accent-color:#278549}
 .customer-transfer-fields .original-salesperson{flex:1;min-width:200px;max-width:420px;margin:0}
 #customerTitle .transferred-customer-badge{font-size:14px;vertical-align:middle}
+
+.maintenance-customer-status{display:inline-block;vertical-align:middle;margin-left:8px}
+.maintenance-customer-badge{display:inline-block;padding:3px 7px;border:1px solid;font-size:12px;line-height:1.5;font-weight:700;border-radius:2px;white-space:nowrap}
+.maintenance-customer-badge--excluded{background:#e8f1ff;color:#1753a0;border-color:#3878cc}
+.maintenance-customer-badge--eligible{background:#fff0f0;color:#ac2424;border-color:#ce4848}
