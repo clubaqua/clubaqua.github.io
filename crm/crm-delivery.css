@@ -1,0 +1,6 @@
+.maintenance-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.maintenance-heading .maintenance-exclude{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;white-space:nowrap;cursor:pointer;margin:0}
+.maintenance-exclude input[type=checkbox]{width:18px;height:18px;min-height:0;margin:0;accent-color:#ffcc00}
+.maintenance-not-applicable{padding:18px 0;font-weight:700}
+.original-salesperson{display:grid;gap:8px;margin:16px 0;max-width:420px}
+.transferred-customer-badge{display:inline-block;vertical-align:middle;margin-left:8px;padding:3px 7px;border:1px solid #278549;border-radius:2px;background:#e7f5eb;color:#145c2d;font-size:12px;line-height:1.5;font-weight:800;white-space:nowrap}
