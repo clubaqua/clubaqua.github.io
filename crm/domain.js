@@ -18,14 +18,14 @@ if(data.services.some(s=>!s.name))throw Error('서비스 물품명을 입력하�
 if(data.estimate)data.estimate=commission(data.estimate.input,data.estimate.configSnapshot);
 const estimatedSales=data.estimate?(data.basis==='세전 발생액'?data.estimate.grossCommission:data.estimate.netCommission):0;
 if(modern){
-for(const k of ['installmentFee','cashbackFee','accessoryFee','networkIncentive','insuranceFee','legacyFinanceIncome','legacyOtherIncome'])data[k]=money(data[k]);
-for(const k of ['installmentProvider','cashbackProvider','insuranceProvider'])data[k]=String(data[k]||'').trim().slice(0,100);
+for(const k of ['installmentFee','cashbackFee','accessoryFee','networkIncentive','insuranceFee','usedCarFee','legacyFinanceIncome','legacyOtherIncome'])data[k]=money(data[k]);
+for(const k of ['installmentProvider','cashbackProvider','insuranceProvider','usedCarProvider'])data[k]=String(data[k]||'').trim().slice(0,100);
 data.financeIncome=data.installmentFee+data.cashbackFee+data.legacyFinanceIncome;
-data.otherIncome=data.accessoryFee+data.networkIncentive+data.insuranceFee+data.legacyOtherIncome;
+data.otherIncome=data.accessoryFee+data.networkIncentive+data.insuranceFee+data.usedCarFee+data.legacyOtherIncome;
 data.preTaxIncome=data.actualSales+data.accessoryFee+data.networkIncentive;
 data.withholdingRate=0.033;
 data.withholdingAmount=Math.round(data.preTaxIncome*33/1000);
-data.afterTaxIncome=data.installmentFee+data.cashbackFee+data.insuranceFee;
+data.afterTaxIncome=data.installmentFee+data.cashbackFee+data.insuranceFee+data.usedCarFee;
 data.totalIncome=data.preTaxIncome-data.withholdingAmount+data.afterTaxIncome+data.legacyFinanceIncome+data.legacyOtherIncome;
 data.received=data.totalIncome;
 }else data.totalIncome=(data.salesConfirmed?data.actualSales:estimatedSales)+data.financeIncome+data.otherIncome;
