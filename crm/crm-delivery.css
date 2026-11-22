@@ -14,3 +14,24 @@
 .maintenance-customer-badge{display:inline-block;padding:3px 7px;border:1px solid;font-size:12px;line-height:1.5;font-weight:700;border-radius:2px;white-space:nowrap}
 .maintenance-customer-badge--excluded{background:#e8f1ff;color:#1753a0;border-color:#3878cc}
 .maintenance-customer-badge--eligible{background:#fff0f0;color:#ac2424;border-color:#ce4848}
+
+/* Customer identity stays in consistent name, status and region rows. */
+.customer-identity{display:grid;gap:6px;text-align:left;line-height:1.45}
+.customer-name-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.customer-name-line .customer-name-link{padding:0!important;margin:0;min-height:0!important;border:0!important;background:transparent!important;color:inherit;font:inherit;font-weight:700;text-align:left;line-height:1.5;overflow-wrap:anywhere}
+.customer-name-line .transferred-customer-badge{margin:0;font-size:11px;padding:2px 6px;flex-shrink:0}
+.customer-status-line{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.customer-status-line .maintenance-customer-badge{margin:0;font-size:11px;padding:2px 6px;line-height:1.5}
+.customer-region{display:block;margin:0;font-size:12px;line-height:1.4}
+.customer-vehicle{display:grid;gap:5px;line-height:1.5}
+.customer-vehicle small{display:block;overflow-wrap:anywhere;font-size:12px}
+.customer-contact-cell{white-space:nowrap;font-variant-numeric:tabular-nums}
+@media(min-width:769px){
+ .table-wrap:has(.customer-identity-cell) table{min-width:980px;table-layout:auto}
+ .table-wrap .customer-identity-cell{width:240px;min-width:210px}
+ .table-wrap .customer-contact-cell{min-width:140px}
+ .table-wrap .customer-vehicle-cell{min-width:155px;max-width:220px}
+ .table-wrap:has(.customer-identity-cell) th,.table-wrap:has(.customer-identity-cell) td{padding:16px 14px;vertical-align:middle}
+ .table-wrap:has(.customer-identity-cell) .bulk-column{width:40px;padding-left:12px;padding-right:8px;text-align:center}
+ .table-wrap:has(.customer-identity-cell) .bulk-column input{display:block;margin:0 auto}
+}
