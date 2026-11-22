@@ -41,3 +41,5 @@
 
 /* Direct SMS/MMS: schedule, photo and full message preview. */
 .sms2-mode{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:20px}.sms2-mode label{display:flex!important;align-items:center;gap:9px}.sms2-mode input{width:18px!important;height:18px;accent-color:var(--line-strong);margin:0}.sms2-photo-preview{display:block;width:auto;max-width:100%;max-height:280px;object-fit:contain;margin:18px auto;border:1px solid var(--line);border-radius:6px}.sms2-body-preview{white-space:normal}.sms2-body-preview p{background:transparent!important;padding:0!important;margin:14px 0 0;white-space:pre-wrap;line-height:1.8}.sms-section #s2Schedule{max-width:100%;margin-top:10px}.sms-section #s2Photo{height:auto;white-space:normal;padding:12px}.sms-section #s2PhotoRemove{margin:14px 0}
+
+.login-brand{display:inline-flex;align-items:center;gap:14px}.login-brand .brand-emblem{width:37px;height:48px;flex:none}.login-brand>span{display:block;line-height:1.2}.login-brand small{margin-top:6px}
