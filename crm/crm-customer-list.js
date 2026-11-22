@@ -10,5 +10,15 @@
    return date(b).localeCompare(date(a))||collator.compare(String(a.name||''),String(b.name||''))||String(a.id||'').localeCompare(String(b.id||''));
   });
  }
- window.RenaultCRMCustomerList={sort};
+ function preserveSelectionScroll(render,target){
+  const area=document.querySelector('.customer-list-view > .table-wrap');
+  const top=area?.scrollTop||0,left=area?.scrollLeft||0;
+  const id=target?.dataset?.bulkCustomer,all=target?.id==='bulkSelectAll';
+  render();
+  const current=document.querySelector('.customer-list-view > .table-wrap');
+  if(current){current.scrollTop=top;current.scrollLeft=left;}
+  const input=all?document.querySelector('#bulkSelectAll'):[...document.querySelectorAll('[data-bulk-customer]')].find(el=>el.dataset.bulkCustomer===id);
+  input?.focus({preventScroll:true});
+ }
+ window.RenaultCRMCustomerList={sort,preserveSelectionScroll};
 })();
