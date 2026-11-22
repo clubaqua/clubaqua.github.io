@@ -6,9 +6,10 @@ function money(v,negative=false){const n=Number(String(v??0).replace(/,/g,''));i
 function config(v=defaults){const c=clone(v);if(!c.version||String(c.version).length>100)throw Error('설정 버전을 입력하세요.');for(const k of ['taxDivisor','vat','excise'])if(!Number.isFinite(c[k])||c[k]<=0)throw Error('세금 계산 상수를 확인하세요.');if(!Number.isFinite(c.hevReduction)||c.hevReduction<0||!Number.isFinite(c.withholding)||c.withholding<0||c.withholding>=1)throw Error('감면액·원천징수율을 확인하세요.');if(!Array.isArray(c.progressive)||c.progressive.length!==8||c.progressive.some(n=>!Number.isFinite(n)||n<0||n>1))throw Error('누진표는 8개 요율이어야 합니다.');if(!c.groups||Object.keys(c.groups).length!==5)throw Error('차종 그룹 5개를 유지하세요.');for(const k of Object.keys(defaults.groups)){const g=c.groups[k];if(!g||!Number.isFinite(g.main)||g.main<0||g.main>1||typeof g.progressive!=='boolean')throw Error('차종 요율을 확인하세요.');}return c;}
 function commission(v,cfg=defaults){const c=config(cfg);if(!['과세','감세','면세'].includes(v.taxType)||!c.groups[v.modelGroup])throw Error('세금 구분과 차종 그룹을 선택하세요.');const input={taxType:v.taxType,modelGroup:v.modelGroup};for(const k of ['vehiclePrice','optionPrice','accessoryPrice','discount','taxAdjust'])input[k]=money(v[k],k==='taxAdjust');input.monthlyUnits=Number(v.monthlyUnits||1);if(!Number.isInteger(input.monthlyUnits)||input.monthlyUnits<1||input.monthlyUnits>10000)throw Error('월 출고대수는 1~10000의 정수입니다.');const A=input.vehiclePrice+input.optionPrice+input.accessoryPrice-input.discount+input.taxAdjust;if(A<0)throw Error('출발가격이 음수입니다.');let B,acc;if(input.taxType==='과세'){B=A/c.taxDivisor;acc=input.accessoryPrice/c.taxDivisor;}else if(input.taxType==='감세'){B=(A/c.vat+c.hevReduction)/c.excise;acc=input.accessoryPrice/c.vat;}else{B=A/c.vat;acc=input.accessoryPrice/c.vat;}const revenue=B-acc;if(revenue<0)throw Error('회사매출액이 음수입니다.');const group=c.groups[input.modelGroup],prog=group.progressive?c.progressive[Math.min(input.monthlyUnits,8)-1]:0,rate=group.main+prog,gross=revenue*rate;return {input,configSnapshot:c,settingsVersion:c.version,startPrice:Math.round(A),supplyPrice:Math.round(B),accessorySupply:Math.round(acc),revenue:Math.round(revenue),mainRate:group.main,progressiveRate:prog,appliedRate:rate,grossCommission:Math.round(gross),withholding:Math.round(gross*c.withholding),netCommission:Math.round(gross*(1-c.withholding))};}
 function ledger(v){
-const data=clone(v||{}),modern=Number(data.ledgerSchema)===2;
+const data=clone(v||{}),modern=Number(data.ledgerSchema)>=2;
 for(const k of ['actualSales','financeIncome','otherIncome','otherServiceCost','businessCost','received'])data[k]=money(data[k]);
 if(!['정산 전','일부 정산','정산 완료'].includes(data.status))data.status='정산 전';
+if(modern)data.basis='원천징수 후 입금액';
 if(!['세전 발생액','원천징수 후 입금액'].includes(data.basis))throw Error('정산 금액 기준을 선택하세요.');
 data.salesConfirmed=data.salesConfirmed===true;
 const categories=['틴팅','블랙박스','매트','차량용굿즈','상품권','소개비','영업비용기타','기존 서비스물품(미분류)'];
@@ -21,13 +22,17 @@ for(const k of ['installmentFee','cashbackFee','accessoryFee','networkIncentive'
 for(const k of ['installmentProvider','cashbackProvider','insuranceProvider'])data[k]=String(data[k]||'').trim().slice(0,100);
 data.financeIncome=data.installmentFee+data.cashbackFee+data.legacyFinanceIncome;
 data.otherIncome=data.accessoryFee+data.networkIncentive+data.insuranceFee+data.legacyOtherIncome;
-data.totalIncome=data.actualSales+data.financeIncome+data.otherIncome;
+data.preTaxIncome=data.actualSales+data.accessoryFee+data.networkIncentive;
+data.withholdingRate=0.033;
+data.withholdingAmount=Math.round(data.preTaxIncome*33/1000);
+data.afterTaxIncome=data.installmentFee+data.cashbackFee+data.insuranceFee;
+data.totalIncome=data.preTaxIncome-data.withholdingAmount+data.afterTaxIncome+data.legacyFinanceIncome+data.legacyOtherIncome;
 data.received=data.totalIncome;
 }else data.totalIncome=(data.salesConfirmed?data.actualSales:estimatedSales)+data.financeIncome+data.otherIncome;
 data.serviceTotal=data.otherServiceCost+data.services.filter(s=>!['소개비','영업비용기타'].includes(s.category)).reduce((sum,s)=>sum+s.amount,0);
 data.businessTotal=data.businessCost+data.services.filter(s=>['소개비','영업비용기타'].includes(s.category)).reduce((sum,s)=>sum+s.amount,0);
 data.totalCost=data.serviceTotal+data.businessTotal;data.profit=data.totalIncome-data.totalCost;
-data.actualIncome=data.actualSales+data.financeIncome+data.otherIncome;
+data.actualIncome=modern?data.totalIncome:data.actualSales+data.financeIncome+data.otherIncome;
 data.memo=String(data.memo||'').slice(0,3000);return data;
 }
 function duplicate(customers,name,phone,id){const p=String(phone).replace(/\D/g,'');return customers.find(c=>c.id!==id&&!c.deleted_at&&String(c.name).trim()===String(name).trim()&&String(c.phone).replace(/\D/g,'')===p);}
