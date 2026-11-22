@@ -2,7 +2,7 @@
 (()=>{
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),phone=v=>String(v||'').replace(/\D/g,'');
 let customers=[],demo=false,search='',body='',selected=new Set(),manual=[],confirmed=false,pending=new Map();
-const $=s=>document.querySelector(s),rejected=c=>[c.smsConsent,c.smsReceive,c.ebestSmsConsent].some(v=>['거부','N','no',false].includes(v));
+const $=s=>document.querySelector(s),rejected=c=>[c.smsConsent,c.smsReceive,c.ebestSmsConsent].some(v=>['거부','N','no',false].includes(v))||/\[엑셀 수신동의\]\s*문자: 거부(?:\s|$)/.test(String(c.notes||''));
 function recipients(){const list=[...customers,...manual].filter(c=>selected.has(c.id)&&!rejected(c));return [...new Map(list.map(c=>[phone(c.phone),{name:c.name,phone:phone(c.phone)}])).values()];}
 function request(type,payload){return new Promise((resolve,reject)=>{const id=crypto.randomUUID(),timer=setTimeout(()=>{pending.delete(id);reject(Error('연결 확장프로그램이 없습니다. 설치 후 CRM과 이베스트를 새로고침하세요.'));},5000);pending.set(id,{resolve,reject,timer});window.postMessage({channel:'REN_CRM_SMS_REQUEST',id,type,payload},location.origin);});}
 window.addEventListener('message',e=>{if(e.source!==window||e.origin!==location.origin||e.data?.channel!=='REN_CRM_SMS_RESPONSE')return;const p=pending.get(e.data.id);if(!p)return;clearTimeout(p.timer);pending.delete(e.data.id);e.data.result?.ok?p.resolve(e.data.result):p.reject(Error(e.data.result?.error||'연결 요청을 처리하지 못했습니다.'));});
@@ -25,4 +25,5 @@ const $$=s=>[...document.querySelectorAll(s)];
 function reset(){customers=[];manual=[];selected.clear();body='';search='';confirmed=false;for(const p of pending.values()){clearTimeout(p.timer);p.reject(Error('로그아웃하여 연결을 중단했습니다.'));}pending.clear();}
 window.RenaultCRMSMS={render,reset};
 })();
+
 

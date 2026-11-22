@@ -2,7 +2,7 @@
 (()=>{
 const $=s=>document.querySelector(s),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),digits=v=>String(v||'').replace(/\D/g,''),bytes=s=>[...s].reduce((n,c)=>n+(c.charCodeAt(0)>127?2:1),0),full=s=>'(광고)'+s.trim()+'\r\n▣무료수신거부 080-300-3004',money=n=>Number(n).toLocaleString('ko-KR');
 let customers=[],manual=[],selected=new Set(),demo=false,body='',search='',consent=false,account=null,sending=false,uncertain=false,lastKey='',generation=0,sendMode='now',schedule='',photo=null,photoBusy=false,photoRevision=0;const pending=new Map();
-const rejected=c=>[c.smsConsent,c.smsReceive,c.ebestSmsConsent].some(v=>['거부','N','no',false].includes(v));
+const rejected=c=>[c.smsConsent,c.smsReceive,c.ebestSmsConsent].some(v=>['거부','N','no',false].includes(v))||/\[엑셀 수신동의\]\s*문자: 거부(?:\s|$)/.test(String(c.notes||''));
 const chosen=()=>[...new Map([...customers,...manual].filter(c=>selected.has(c.id)&&!rejected(c)).map(c=>[digits(c.phone),{name:c.name,phone:digits(c.phone)}])).values()];
 function request(type,payload){return new Promise((resolve,reject)=>{const id=crypto.randomUUID(),timer=setTimeout(()=>{pending.delete(id);const e=Error(type==='CRM2_SEND'?'발송 결과 응답이 늦습니다. 자동 재발송하지 않습니다. 이베스트 발송결과를 확인하세요.':'연결 프로그램 2.2 설치 후 CRM과 이베스트를 모두 새로고침하세요.');e.uncertain=type==='CRM2_SEND';reject(e);},type==='CRM2_SEND'?180000:30000);pending.set(id,{resolve,reject,timer});window.postMessage({channel:'REN_CRM_SMS_REQUEST',id,type,payload},location.origin);});}
 window.addEventListener('message',e=>{if(e.source!==window||e.origin!==location.origin||e.data?.channel!=='REN_CRM_SMS_RESPONSE')return;const p=pending.get(e.data.id);if(!p)return;clearTimeout(p.timer);pending.delete(e.data.id);const r=e.data.result;if(r?.ok)p.resolve(r);else{const err=Error(r?.error||'연결 요청에 실패했습니다. 연결 프로그램 2.2으로 업데이트하세요.');err.uncertain=!!r?.uncertain;p.reject(err);}});
@@ -32,6 +32,7 @@ setInterval(update,30000);
 function reset(){generation++;customers=[];manual=[];selected.clear();body='';search='';consent=false;account=null;sending=false;uncertain=false;lastKey='';sendMode='now';schedule='';photo=null;photoBusy=false;photoRevision++;for(const p of pending.values()){clearTimeout(p.timer);p.reject(Error('로그아웃했습니다. 진행 중이던 발송 요청은 이베스트 발송결과에서 확인하세요.'));}pending.clear();}
 window.RenaultCRMSMS2={render,reset};
 })();
+
 
 
 
