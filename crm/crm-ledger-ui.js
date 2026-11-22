@@ -9,8 +9,17 @@ fetch('brand-logos.json?v=20261122-insurance-fee').then(r=>r.json()).then(value=
 const amount=(name,label,value=0)=>'<label>'+label+'<input name="'+name+'" type="text" inputmode="numeric" data-money data-nonnegative value="'+esc(value?Number(String(value).replace(/,/g,'')).toLocaleString('ko-KR'):'')+'" placeholder="금액 입력"></label>';
 function logo(value,insurance=false){const p=(insurance?insurers:providers).find(p=>p[0]===value);const src=p?(insurance?insurerLogos[p[1]]||'':'/renault-mulgeum/assets/finance/'+p[1]+'.svg'):'';return (p?'<img '+(src?'src="'+esc(src)+'"':'hidden')+(insurance?' data-insurance-logo="'+esc(p[1])+'"':'')+' alt="" width="26" height="26">':'')+'<span>'+esc(value||'해당없음')+'</span>';}
 function provider(name,label,value='',insurance=false){return '<div class="ledger-provider-field"><span>'+label+'</span><details class="ledger-provider-picker" data-provider-picker="'+name+'"><summary>'+logo(value,insurance)+'</summary><div class="ledger-provider-options"><button type="button" aria-label="해당없음" data-ledger-provider="'+name+'" data-value="">해당없음</button>'+(insurance?insurers:providers).map(p=>'<button type="button" aria-label="'+esc(p[0])+'" data-ledger-provider="'+name+'" data-value="'+esc(p[0])+'">'+logo(p[0],insurance)+'</button>').join('')+'</div></details><input type="hidden" name="'+name+'" value="'+esc(value)+'"></div>';}
-function usedCarProvider(value=''){return '<div class="ledger-provider-field ledger-used-provider"><label>중고업체<select data-used-provider-choice><option value="" '+(!value?'selected':'')+'>해당없음</option><option value="custom" '+(value?'selected':'')+'>직접입력</option></select></label><input name="usedCarProvider" aria-label="중고업체명" maxlength="100" placeholder="중고업체명 직접입력" value="'+esc(value)+'" '+(!value?'hidden':'')+'></div>';}
-function costRow(s={}){const cat=s.category||(s.name||s.amount?'기존 서비스물품(미분류)':'틴팅'),options=[...categories,...(cat==='기존 서비스물품(미분류)'?[cat]:[])];return '<div class="service-cost-row"><label>물품구분<select data-service-category>'+options.map(c=>'<option '+(c===cat?'selected':'')+'>'+c+'</option>').join('')+'</select></label><label>물품명<input data-service-name aria-label="서비스 물품명" placeholder="물품명" maxlength="100" value="'+esc(s.name||'')+'"></label><label>가격<input data-service-amount aria-label="서비스 물품금액" type="text" inputmode="numeric" data-money data-nonnegative value="'+esc(s.amount?Number(s.amount).toLocaleString('ko-KR'):'')+'" placeholder="금액 입력"></label><button type="button" data-remove-cost>행 제거</button></div>';}
+const itemNames={'틴팅':['레인보우IS100','버텍스900'],'블랙박스':['아이나비Z1'],'매트':['카메론TPE매트'],'차량용굿즈':['굿즈일체'],'상품권':['아웃백','백화점','현금지원']};
+function inlineEditor(value,choices,inputAttrs,choiceAttr,emptyLabel){
+ const custom=!!value&&!choices.includes(value);
+ return '<span data-inline-editor style="display:flex;gap:6px;align-items:center"><select '+choiceAttr+' aria-label="이름 선택" '+(custom?'hidden':'')+'><option value="">'+emptyLabel+'</option>'+choices.map(n=>'<option value="'+esc(n)+'" '+(n===value?'selected':'')+'>'+esc(n)+'</option>').join('')+'<option value="__custom__" '+(custom?'selected':'')+'>직접입력</option></select><input '+inputAttrs+' maxlength="100" placeholder="직접 입력해주세요" value="'+esc(value)+'" '+(!custom?'hidden':'')+'><button type="button" data-inline-list '+(!custom?'hidden':'')+' style="flex:none">목록</button></span>';
+}
+function usedCarProvider(value=''){return '<div class="ledger-provider-field ledger-used-provider"><label>중고업체'+inlineEditor(value,[],'name="usedCarProvider" aria-label="중고업체명"','data-used-provider-choice','해당없음')+'</label></div>';}
+function serviceNameEditor(cat,value=''){
+ const choices=itemNames[cat];
+ return choices?inlineEditor(value,choices,'data-service-name aria-label="서비스 물품명"','data-service-name-choice','선택해주세요'):'<input data-service-name aria-label="서비스 물품명" placeholder="물품명 직접입력" maxlength="100" value="'+esc(value)+'">';
+}
+function costRow(s={}){const cat=s.category||(s.name||s.amount?'기존 서비스물품(미분류)':'틴팅'),options=[...categories,...(cat==='기존 서비스물품(미분류)'?[cat]:[])];return '<div class="service-cost-row"><label>물품구분<select data-service-category>'+options.map(c=>'<option '+(c===cat?'selected':'')+'>'+c+'</option>').join('')+'</select></label><label data-service-name-field>물품명'+serviceNameEditor(cat,s.name||'')+'</label><label>가격<input data-service-amount aria-label="서비스 물품금액" type="text" inputmode="numeric" data-money data-nonnegative value="'+esc(s.amount?Number(s.amount).toLocaleString('ko-KR'):'')+'" placeholder="금액 입력"></label><button type="button" data-remove-cost>행 제거</button></div>';}
 let openedRecord=null;
 function setEditMode(editable){const form=document.querySelector("#ledgerForm");if(!form)return;form.dataset.readonly=String(!editable);form.querySelectorAll("input,select,textarea,button").forEach(el=>{if(el.id!=="editLedger")el.disabled=!editable;});if(openedRecord&&form.elements.customerId)form.elements.customerId.disabled=true;form.querySelector("#editLedger").hidden=editable;form.querySelector("#ledgerSave").hidden=!editable;form.querySelectorAll("summary").forEach(el=>{el.tabIndex=editable?0:-1;el.setAttribute("aria-disabled",String(!editable));el.parentElement.open=false;});document.querySelector("#ledgerDialog h2").textContent=openedRecord?(editable?"차계부 수정":"차계부 상세"):"출고 건 등록";}
 function open(n,candidates,editing){
@@ -31,6 +40,23 @@ function totals(form,data){form.querySelector('[data-ledger-income]').textConten
 document.addEventListener('click',e=>{if(e.target.closest('#editLedger')){setEditMode(true);return;}const b=e.target.closest('[data-ledger-provider]');if(!b||b.closest('form')?.dataset.readonly==='true')return;const form=b.closest('form'),picker=b.closest('details');form.elements[b.dataset.ledgerProvider].value=b.dataset.value;picker.querySelector('summary').innerHTML=logo(b.dataset.value,b.dataset.ledgerProvider==='insuranceProvider');picker.open=false;picker.querySelector('summary').focus();});
 document.addEventListener('submit',e=>{if(e.target.id==='ledgerForm'&&e.target.dataset.readonly==='true'){e.preventDefault();e.stopImmediatePropagation();}},true);
 for(const type of ['click','keydown'])document.addEventListener(type,e=>{if(e.target.closest('#ledgerForm[data-readonly="true"] summary')){e.preventDefault();e.stopImmediatePropagation();}},true);
-document.addEventListener('change',e=>{if(!e.target.matches('[data-used-provider-choice]'))return;const input=e.target.closest('.ledger-used-provider').querySelector('[name="usedCarProvider"]');input.hidden=e.target.value!=='custom';if(input.hidden)input.value='';else input.focus();});
+document.addEventListener('change',e=>{
+ if(e.target.closest('form')?.dataset.readonly==='true')return;
+ if(e.target.matches('[data-service-category]')){
+  const row=e.target.closest('.service-cost-row'),value=row.querySelector('[data-service-name]').value;
+  row.querySelector('[data-service-name-field]').innerHTML='물품명'+serviceNameEditor(e.target.value,value);
+  return;
+ }
+ if(!e.target.matches('[data-used-provider-choice],[data-service-name-choice]'))return;
+ const editor=e.target.closest('[data-inline-editor]'),input=editor.querySelector('input'),custom=e.target.value==='__custom__';
+ input.hidden=!custom;e.target.hidden=custom;editor.querySelector('[data-inline-list]').hidden=!custom;
+ if(custom)input.focus();else input.value=e.target.value;
+});
+document.addEventListener('click',e=>{
+ const button=e.target.closest('[data-inline-list]');
+ if(!button||button.closest('form')?.dataset.readonly==='true')return;
+ const editor=button.closest('[data-inline-editor]'),select=editor.querySelector('select');
+ button.hidden=true;editor.querySelector('input').hidden=true;select.hidden=false;select.focus();
+});
 window.RenaultCRMLedgerUI={open,read,totals,costRow};
 })();

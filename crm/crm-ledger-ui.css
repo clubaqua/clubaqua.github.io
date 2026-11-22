@@ -22,3 +22,7 @@
 .ledger-v2-dialog .margin-highlight{display:grid;gap:10px}
 .ledger-v2-dialog .margin-highlight strong{font-size:30px}
 @media(max-width:650px){.ledger-v2-dialog .ledger-income-grid{grid-template-columns:1fr}.ledger-v2-dialog .service-cost-row{grid-template-columns:1fr 1fr}.ledger-cost-summary{flex-wrap:wrap}}
+
+.ledger-v2-dialog [data-inline-editor] [hidden]{display:none!important}
+.ledger-v2-dialog [data-inline-editor]>input,.ledger-v2-dialog [data-inline-editor]>select{flex:1;width:100%;min-width:0}
+.ledger-v2-dialog [data-inline-list]{padding:10px;white-space:nowrap}
