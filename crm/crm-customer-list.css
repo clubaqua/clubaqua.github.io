@@ -1,0 +1,10 @@
+body:has(.customer-list-view){overflow:hidden}
+body:has(.customer-list-view) .main{height:calc(100dvh - var(--app-header-height,0px));box-sizing:border-box;display:flex;flex-direction:column;min-height:0;padding-bottom:16px}
+body:has(.customer-list-view) .main>.topbar,body:has(.customer-list-view) .main>#demoBanner,body:has(.customer-list-view) .main>#appMessage{flex-shrink:0}
+body:has(.customer-list-view) #content{display:flex;flex-direction:column;flex:1;min-height:0}
+.customer-list-view{display:flex;flex-direction:column;flex:1;min-height:0}
+.customer-list-view>.panel-head,.customer-list-view>.filters,.customer-list-view>p{flex-shrink:0}
+.customer-list-view>.table-wrap{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;border-radius:8px}
+.customer-list-view .table-wrap thead th{position:sticky;top:0;z-index:2;background:var(--surface-muted,#efefe8);box-shadow:0 1px 0 var(--line,#deded5)}
+.customer-list-view>.empty{overflow:auto}
+@media(max-width:768px){body:has(.customer-list-view) .main{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}.customer-list-view>.panel-head{gap:8px}.customer-list-view>.table-wrap{border-radius:0}}
