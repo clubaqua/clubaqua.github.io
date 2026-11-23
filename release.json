@@ -1,6 +1,6 @@
 {
-  "release": "settings-20261123-03",
-  "builtAt": "2026-11-23T05:05:13.813Z",
+  "release": "finance-layout-20261123-04",
+  "builtAt": "2026-11-23T05:21:07.314Z",
   "files": [
     {
       "path": "renault-mulgeum/advisor.css",
@@ -453,11 +453,6 @@
       "sha256": "4d5c6ab833932702f3314e6ecbacd943cea0ff82d7d857104521b601e17de97c"
     },
     {
-      "path": "crm/index.html",
-      "bytes": 8519,
-      "sha256": "fb2d0ce8e0966cada429d8227dcc9df1379339a2f0c4e8abc855a8cab415e596"
-    },
-    {
       "path": "crm/postcode-popup.html",
       "bytes": 1795,
       "sha256": "b84fb4d4587adccd2859a40383adb470d085fae4f524cd588fa427cf2e39dcf1"
@@ -553,11 +548,6 @@
       "sha256": "6405c312a0fc1e981ab73725d470c7c8d9ffb05347dbb96aa7aa90c5df7b7d3a"
     },
     {
-      "path": "crm/crm-catalog.js",
-      "bytes": 22885,
-      "sha256": "292ef2d18f4c1f44cc5628ff00f1288d587822664a000b08365431c6df82e110"
-    },
-    {
       "path": "crm/crm-workspace.js",
       "bytes": 2879,
       "sha256": "40564388f2abd77f0a7882a092bcd5bfc7fbc92e2c38dfedc43d2446f03014cc"
@@ -578,10 +568,20 @@
       "sha256": "472b569e8e46a66f6da182a2c09c15deb6545deafc59801ec80d788fef1ec465"
     },
     {
+      "path": "crm/index.html",
+      "bytes": 8735,
+      "sha256": "316b28d5f376e955106442d615a4012fd490c4dce521c9540a621f70486e8604"
+    },
+    {
+      "path": "crm/crm-catalog.js",
+      "bytes": 24639,
+      "sha256": "da32f986b07f1b8facd6e5e9374b7ace607167466de8d4529ddef8f9bcbe483b"
+    },
+    {
       "path": "crm/crm-settings.css",
-      "bytes": 6837,
-      "sha256": "e2796abe37ac56243d56acf573de61ae752afb4c37281ca5bb335bb9773bb7d9"
+      "bytes": 11952,
+      "sha256": "abf989d1826d33ceca738cd7fcb1d31d5542e318af8a2c0adf6008166c199fdc"
     }
   ],
-  "sourceCommit": "3ed523547008a55b195ed23abbebb143c230dfb8"
+  "sourceCommit": "a0bc3cfd5f9f427f5a3e0cf16d32b74e920b3fcd"
 }
