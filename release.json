@@ -1,6 +1,6 @@
 {
-  "release": "joint-stage-20261124-01",
-  "builtAt": "2026-11-23T16:15:01.882Z",
+  "release": "korean-search-20261124-01",
+  "builtAt": "2026-11-23T16:19:57.366Z",
   "files": [
     {
       "path": "renault-mulgeum/advisor.css",
@@ -443,11 +443,6 @@
       "sha256": "bb7ef89aeebe03ea15f5460f2594fb398e7e5c2a1af08eb68acd8a141ef4b2e1"
     },
     {
-      "path": "crm/crm-catalog.js",
-      "bytes": 24999,
-      "sha256": "b55d877ee4a4de009cda776fdae7ea0a52076988760ab53b70e87be2e4c2a056"
-    },
-    {
       "path": "crm/crm-form.js",
       "bytes": 11079,
       "sha256": "f552fac3c6ad0ee367ba4b7c547c40d108c16d11a1e574af5af3ae4fab044cc2"
@@ -583,11 +578,6 @@
       "sha256": "40125b8a299104fa53c548387565b0db652634fb31f555d99e8efb63840e15da"
     },
     {
-      "path": "crm/crm.js",
-      "bytes": 31035,
-      "sha256": "98afc3efd2e435da2d59e805c45256703ff6127cb5006b53e012f0ede0b174b1"
-    },
-    {
       "path": "crm/crm-workflow.js",
       "bytes": 6061,
       "sha256": "8bf55a163b410219a68246fd449d1e93b5e03956b92f34f57e6503ef7a42c29e"
@@ -608,10 +598,20 @@
       "sha256": "164fdc7f8a12c7ecaee9da834d9ede8b4645cb794464b87e3d420f34c808a97a"
     },
     {
+      "path": "crm/crm.js",
+      "bytes": 31637,
+      "sha256": "5297fc6499190ba06af2dbb4a75f4778cb140e5281f2859e20131eb56f72abef"
+    },
+    {
+      "path": "crm/crm-catalog.js",
+      "bytes": 25252,
+      "sha256": "d2b14f9eb3932a1d819b31f3f929dda7c0482d84aee72390a4b4da91824ae388"
+    },
+    {
       "path": "crm/index.html",
       "bytes": 9345,
-      "sha256": "df303c4d03f21746c116e851518c0dc9f7a4bcfe00c1d676aa590a3205150fd8"
+      "sha256": "77a05404e7b87c7f7cf1112bf013f06271753eeb9c553157189f9bd3e9277319"
     }
   ],
-  "sourceCommit": "d2f0b0f6fbc61c5187f27b24999c8e21a6d77d04"
+  "sourceCommit": "e4fe952799570d962bce2b8a03cd05def0472394"
 }
