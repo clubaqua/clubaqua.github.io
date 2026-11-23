@@ -1,6 +1,6 @@
 {
-  "release": "bulk-inline-20261124-01",
-  "builtAt": "2026-11-23T15:54:40.583Z",
+  "release": "purchase-stages-20261124-01",
+  "builtAt": "2026-11-23T16:08:27.040Z",
   "files": [
     {
       "path": "renault-mulgeum/advisor.css",
@@ -573,34 +573,9 @@
       "sha256": "08ec905a0570471e86d7b0c390aa90dbc9db442c1032ac9821c93d6b492295d0"
     },
     {
-      "path": "crm/crm.js",
-      "bytes": 31075,
-      "sha256": "74109c774265e4b9d6e11650d2ae37d7de7991b3c0785c3a56a762fa690ee850"
-    },
-    {
       "path": "crm/crm-delivery.js",
       "bytes": 4139,
       "sha256": "93c4b9fe71107735129b98782b240b30d6da261b830b0e32ac6ca3e9b94b9375"
-    },
-    {
-      "path": "crm/crm-import-core.js",
-      "bytes": 9586,
-      "sha256": "826adc4c730bf7ee0707c99bc4d3121cec597ab36f378f040fec5ead2fb97e49"
-    },
-    {
-      "path": "crm/crm-customer-list.js",
-      "bytes": 2809,
-      "sha256": "8feedb457f7e2340a3de9f9f8c67ca048baa4fcb3ac91bca8aef5a577653e02b"
-    },
-    {
-      "path": "crm/crm-workflow.js",
-      "bytes": 6086,
-      "sha256": "d3a970e7e532d09b1ce28ad96ba099a8f1b22160d0c5df00ad02b2562420a427"
-    },
-    {
-      "path": "crm/crm-bulk-edit.js",
-      "bytes": 4218,
-      "sha256": "eb240824465160e9c723d5604e9edd1d1fec5dce2f88227236b56c708e255d2f"
     },
     {
       "path": "crm/crm-bulk-edit.css",
@@ -608,10 +583,35 @@
       "sha256": "40125b8a299104fa53c548387565b0db652634fb31f555d99e8efb63840e15da"
     },
     {
+      "path": "crm/crm.js",
+      "bytes": 31035,
+      "sha256": "2dc0af7c39a98aab1cc33387ab88340fb3c42405d1970534016df9825454072e"
+    },
+    {
+      "path": "crm/crm-workflow.js",
+      "bytes": 6061,
+      "sha256": "6ff87b03ac4bfcdca6d7476e0a2c39a8b908e2468938ed7c113b31e860fd8159"
+    },
+    {
+      "path": "crm/crm-customer-list.js",
+      "bytes": 2769,
+      "sha256": "7ae2c66aa5bbecd338900b3fb5e9ed8fd5e1c3485960d95b27c62fa7f9284b1f"
+    },
+    {
+      "path": "crm/crm-bulk-edit.js",
+      "bytes": 4248,
+      "sha256": "25962b826ef5d04daf41ad1284def48c8ea2b00e492468a812f0aa2f0beaefcb"
+    },
+    {
+      "path": "crm/crm-import-core.js",
+      "bytes": 9548,
+      "sha256": "cd43ba1fcc53a817c99d04e16ba66d9063cc2c77f45272d73b74b68770111e73"
+    },
+    {
       "path": "crm/index.html",
-      "bytes": 9361,
-      "sha256": "5da7327a5a8ae01d381a3b8d46767c108869d4f58e8181927d9da90637b426b9"
+      "bytes": 9365,
+      "sha256": "c893cc0aafea073159c6c1d4a9f8872d66827eae22e240de162ee633aa49d62e"
     }
   ],
-  "sourceCommit": "2b747f83fc8803e0584ca0934e83f1fc66365725"
+  "sourceCommit": "6e3a0e2bad1c3789193e8bb2f9925b7ca7f665b2"
 }
