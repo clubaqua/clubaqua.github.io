@@ -1,6 +1,6 @@
 {
-  "release": "compact-checks-20261124-01",
-  "builtAt": "2026-11-23T15:36:53.563Z",
+  "release": "customer-stages-20261124-01",
+  "builtAt": "2026-11-23T15:46:15.306Z",
   "files": [
     {
       "path": "renault-mulgeum/advisor.css",
@@ -223,29 +223,14 @@
       "sha256": "c71aeb3834345a685027dc867c7e0fd31b7e68c277bd5b520d858bc8c6898344"
     },
     {
-      "path": "crm/crm-bulk-edit.js",
-      "bytes": 3197,
-      "sha256": "b270aef22edd5e5d475729ff4bc869b4cbd35fb2c4068a55bd01e528bb382131"
-    },
-    {
       "path": "crm/crm-customer-list.css",
       "bytes": 1594,
       "sha256": "506637ddd5ce7853818953ed8d98923800a0a110a72df57c84583923c8ff1cb4"
     },
     {
-      "path": "crm/crm-customer-list.js",
-      "bytes": 2809,
-      "sha256": "91ff1dd8cff419235f19de6f41188185edd654454204c02d2712757b464d89a4"
-    },
-    {
       "path": "crm/crm-delivery.css",
       "bytes": 4178,
       "sha256": "9c73f3737aa077b4fb695d37b1542ea88ee8f65f32bb845f1f3dc7dd1ed49330"
-    },
-    {
-      "path": "crm/crm-delivery.js",
-      "bytes": 4158,
-      "sha256": "8f91b3dad54baa0c9d1d87c46b382254289235f1d4429ff37d8e8e9e4e5c0850"
     },
     {
       "path": "crm/crm-design.js",
@@ -271,11 +256,6 @@
       "path": "crm/crm-history.js",
       "bytes": 3186,
       "sha256": "4164f8083f9639b7f199324eda655b73739ad7f7e38214e2c7e5da3d4016bb62"
-    },
-    {
-      "path": "crm/crm-import-core.js",
-      "bytes": 9541,
-      "sha256": "e03d1fec76e9d19e161ab020f4b75adad97426307a2426e4d98070bee74c68a5"
     },
     {
       "path": "crm/crm-import.css",
@@ -326,11 +306,6 @@
       "path": "crm/crm-vehicle.js",
       "bytes": 3457,
       "sha256": "7c4214ba3789b6e156dfe6e0aebb9390fbb9da086e5e702bd22af683dcf136f7"
-    },
-    {
-      "path": "crm/crm-workflow.js",
-      "bytes": 6086,
-      "sha256": "413378e639109582b04b460c8290558fb3817e1298e274575db89b885b0be68e"
     },
     {
       "path": "crm/crm.css",
@@ -478,11 +453,6 @@
       "sha256": "b55d877ee4a4de009cda776fdae7ea0a52076988760ab53b70e87be2e4c2a056"
     },
     {
-      "path": "crm/crm.js",
-      "bytes": 30952,
-      "sha256": "22cae637614aad04c94b0c4d57fc2c323566a05506321103dbe70bcb30018005"
-    },
-    {
       "path": "crm/crm-form.js",
       "bytes": 11079,
       "sha256": "f552fac3c6ad0ee367ba4b7c547c40d108c16d11a1e574af5af3ae4fab044cc2"
@@ -568,11 +538,6 @@
       "sha256": "686f8da3058be6cf45e2bf4aa1ffbb016d3f7ea171b47bf84391cd134ce83117"
     },
     {
-      "path": "crm/index.html",
-      "bytes": 9329,
-      "sha256": "6e0e82f5a88a4cc23c5aad67b0de0a72768fee3b8843e1ecaa74d1289db33184"
-    },
-    {
       "path": "crm/sms-setup.html",
       "bytes": 3928,
       "sha256": "dad20896964395ca32a16171527955166ddef95061d1d0252f31e188b5f582a8"
@@ -611,7 +576,42 @@
       "path": "renault-mulgeum/compact-controls.css",
       "bytes": 496,
       "sha256": "08ec905a0570471e86d7b0c390aa90dbc9db442c1032ac9821c93d6b492295d0"
+    },
+    {
+      "path": "crm/crm.js",
+      "bytes": 31075,
+      "sha256": "74109c774265e4b9d6e11650d2ae37d7de7991b3c0785c3a56a762fa690ee850"
+    },
+    {
+      "path": "crm/crm-delivery.js",
+      "bytes": 4139,
+      "sha256": "93c4b9fe71107735129b98782b240b30d6da261b830b0e32ac6ca3e9b94b9375"
+    },
+    {
+      "path": "crm/crm-import-core.js",
+      "bytes": 9586,
+      "sha256": "826adc4c730bf7ee0707c99bc4d3121cec597ab36f378f040fec5ead2fb97e49"
+    },
+    {
+      "path": "crm/crm-customer-list.js",
+      "bytes": 2809,
+      "sha256": "8feedb457f7e2340a3de9f9f8c67ca048baa4fcb3ac91bca8aef5a577653e02b"
+    },
+    {
+      "path": "crm/crm-workflow.js",
+      "bytes": 6086,
+      "sha256": "d3a970e7e532d09b1ce28ad96ba099a8f1b22160d0c5df00ad02b2562420a427"
+    },
+    {
+      "path": "crm/crm-bulk-edit.js",
+      "bytes": 4044,
+      "sha256": "52225e47f9a1a8f4f87fd94eb6225915a71e9cdfc5d4fdad860a5d6c3a47d4ec"
+    },
+    {
+      "path": "crm/index.html",
+      "bytes": 9369,
+      "sha256": "fbb35e2687a29ff213bf461ad735b0d35fd84d4f2401a8486875cd2bf99e9f20"
     }
   ],
-  "sourceCommit": "d672dabf843ec1553237de0e41638ced08f65894"
+  "sourceCommit": "286d6bd3f7552d6a861f6e0499a317a2fd15490d"
 }
