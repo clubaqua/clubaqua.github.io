@@ -1,6 +1,6 @@
 {
-  "release": "ledger-compact-20261124-01",
-  "builtAt": "2026-11-23T16:35:28.277Z",
+  "release": "crm-search-20261124-01",
+  "builtAt": "2026-11-23T18:05:55.032Z",
   "files": [
     {
       "path": "renault-mulgeum/advisor.css",
@@ -283,16 +283,6 @@
       "sha256": "99430d10091332d4711882f1b38075161fb134642b907f0ad9b026ab409c2923"
     },
     {
-      "path": "crm/crm-sms.js",
-      "bytes": 9649,
-      "sha256": "1787fc2b3701205b0a4dc9bc04a006cbd6a8ee62cfb045d1560075a4271f4166"
-    },
-    {
-      "path": "crm/crm-sms2.js",
-      "bytes": 19684,
-      "sha256": "dea0a725413b425f2cb03363acd7f3901d4af35ff8416652ade35fcb1754b577"
-    },
-    {
       "path": "crm/crm-theme.css",
       "bytes": 22339,
       "sha256": "78aff40e270288d69e652a2fb0d03f48b06f46e0b1653cdc36f1d613d7f28ffe"
@@ -448,16 +438,6 @@
       "sha256": "838c2bf171d65b8990e4d48c4a19a0f1c12efadbaffb49c4936369ea7e7659aa"
     },
     {
-      "path": "crm/crm-workspace.js",
-      "bytes": 3843,
-      "sha256": "5da4953d8845ca80121a8363ceb2b6a2e66ae884878575ef28828993a9755719"
-    },
-    {
-      "path": "crm/crm-workspace.css",
-      "bytes": 10970,
-      "sha256": "473dc7d002cb442dd0fe8c53fdf88cf1a2a5c79f42056b704fb77173320f5f83"
-    },
-    {
       "path": "renault-mulgeum/renault-fonts.css",
       "bytes": 1056,
       "sha256": "3d6a9993c8f9c4be0a84ea68bf78e4cc2cbd3cafc086e4053462b4e00b9727f4"
@@ -588,30 +568,50 @@
       "sha256": "164fdc7f8a12c7ecaee9da834d9ede8b4645cb794464b87e3d420f34c808a97a"
     },
     {
-      "path": "crm/crm.js",
-      "bytes": 31637,
-      "sha256": "5297fc6499190ba06af2dbb4a75f4778cb140e5281f2859e20131eb56f72abef"
-    },
-    {
-      "path": "crm/crm-catalog.js",
-      "bytes": 25252,
-      "sha256": "d2b14f9eb3932a1d819b31f3f929dda7c0482d84aee72390a4b4da91824ae388"
-    },
-    {
-      "path": "crm/crm-finance.js",
-      "bytes": 17460,
-      "sha256": "7fa7fb48a47cd885bef9339febd9c7d94fd6b6e73ad2a68c8b89e46f7c97526b"
-    },
-    {
       "path": "crm/crm-ledger-ui.css",
       "bytes": 8407,
       "sha256": "daa69c24a83ed10379134ee24b0df090ce190b209c6588449457b189f078c9b7"
     },
     {
+      "path": "crm/crm.js",
+      "bytes": 33886,
+      "sha256": "9c9fa8db19ffcb6dad95211f2fe0af4ec559147bb44c36bd46b01955f9e97511"
+    },
+    {
+      "path": "crm/crm-finance.js",
+      "bytes": 17596,
+      "sha256": "0e0211730874a56261571e8a1e5824116e831906455580b56f4729f75daab6c8"
+    },
+    {
+      "path": "crm/crm-sms.js",
+      "bytes": 10214,
+      "sha256": "70fc1a0c27155ef0e4429db13510713e81d197c66a66794fc5a9c585176ebe5c"
+    },
+    {
+      "path": "crm/crm-sms2.js",
+      "bytes": 20233,
+      "sha256": "78539eef01ded256a9cae74335b36319016054bbb6c946d9bfa7419a09dd5a06"
+    },
+    {
+      "path": "crm/crm-workspace.js",
+      "bytes": 4254,
+      "sha256": "f4709fb239332e244ff193929a7813589d6d7cdaedd302d3b9a3d6f427bbfc54"
+    },
+    {
+      "path": "crm/crm-workspace.css",
+      "bytes": 12866,
+      "sha256": "5ba0022c0561ce4aa6b2552a9e240b57437f32303b9a1d80575c75acedcf4219"
+    },
+    {
+      "path": "crm/crm-catalog.js",
+      "bytes": 25344,
+      "sha256": "7cf23da1fc12f426a3969108d85eef3eccb35c9ac8cb1a7e0de024e7308a18fa"
+    },
+    {
       "path": "crm/index.html",
-      "bytes": 9343,
-      "sha256": "87dacc169372be49e7afe081faf1e2502a6ee31887f90646a83f989f081b5093"
+      "bytes": 9313,
+      "sha256": "cb54d00412f909d3232ec0b69330b6b679535febd63de7f736a7ee8749401650"
     }
   ],
-  "sourceCommit": "f3367da4004b649fc6fdb2f151c885ed8028e99e"
+  "sourceCommit": "b4c5de87846c49a57831b5799c1c14b16733adc2"
 }
