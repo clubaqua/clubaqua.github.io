@@ -1,6 +1,6 @@
 {
-  "release": "settings-return-20261123-01",
-  "builtAt": "2026-11-23T14:59:48.602Z",
+  "release": "insurance-20261124-01",
+  "builtAt": "2026-11-23T15:11:26.644Z",
   "files": [
     {
       "path": "renault-mulgeum/advisor.css",
@@ -328,11 +328,6 @@
       "sha256": "5d2f6de8c8e0ce3e6d66800d209c7c5f6cd3a83dedf0541ef72bfd1d2554acea"
     },
     {
-      "path": "crm/crm-form.js",
-      "bytes": 11151,
-      "sha256": "bfe35f6dd753ee7dbaaa0a5abee1d4027a4db2a83031f2810aee3562f2622671"
-    },
-    {
       "path": "crm/crm-history.css",
       "bytes": 655,
       "sha256": "76f820eca23f4ed2e294b73bd6a6b2e5601749bd108f298af499cb84d651c01c"
@@ -558,16 +553,6 @@
       "sha256": "440489d6fc8ef32adac78ebb93c11f89483b2aa71931a43c303931389bd6ae9f"
     },
     {
-      "path": "crm/crm-ledger-ui.css",
-      "bytes": 4494,
-      "sha256": "4c5738ce69f533d26c7d0900d366a19e3ce890b93d58b8799718803cec729867"
-    },
-    {
-      "path": "crm/crm.js",
-      "bytes": 30547,
-      "sha256": "1c5bc8a87e68c7428423bc0443cfe736e7076b245e86eb054ac89a6273c47306"
-    },
-    {
       "path": "crm/crm-settings.js",
       "bytes": 4008,
       "sha256": "bb7ef89aeebe03ea15f5460f2594fb398e7e5c2a1af08eb68acd8a141ef4b2e1"
@@ -578,10 +563,30 @@
       "sha256": "b55d877ee4a4de009cda776fdae7ea0a52076988760ab53b70e87be2e4c2a056"
     },
     {
+      "path": "crm/crm.js",
+      "bytes": 30952,
+      "sha256": "22cae637614aad04c94b0c4d57fc2c323566a05506321103dbe70bcb30018005"
+    },
+    {
+      "path": "crm/crm-form.js",
+      "bytes": 11079,
+      "sha256": "f552fac3c6ad0ee367ba4b7c547c40d108c16d11a1e574af5af3ae4fab044cc2"
+    },
+    {
+      "path": "crm/crm-insurance.js",
+      "bytes": 3679,
+      "sha256": "838c2bf171d65b8990e4d48c4a19a0f1c12efadbaffb49c4936369ea7e7659aa"
+    },
+    {
+      "path": "crm/crm-ledger-ui.css",
+      "bytes": 4593,
+      "sha256": "6fb3c7985de8c9935c5ef3a829e3674daeec0f59dece970e809337a7d3189d64"
+    },
+    {
       "path": "crm/index.html",
-      "bytes": 8771,
-      "sha256": "46148306231c8fd59bfe3f9edf02d901c13dcfb474c5563b57c0b5116a5b05b4"
+      "bytes": 8633,
+      "sha256": "b7df9f44a73db97656f45f0361a6e241dac53ef786b0de93dbd549af288656c5"
     }
   ],
-  "sourceCommit": "a3711d4feaf1e7e4465486793bf4a6e5de2bff32"
+  "sourceCommit": "cace6a7cf7b2a59c7f7ee79152bc7ede22597ea7"
 }
