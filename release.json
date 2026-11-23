@@ -1,6 +1,6 @@
 {
-  "release": "settings-20261123-02",
-  "builtAt": "2026-11-23T05:03:33.190Z",
+  "release": "settings-20261123-03",
+  "builtAt": "2026-11-23T05:05:13.813Z",
   "files": [
     {
       "path": "renault-mulgeum/advisor.css",
@@ -20,32 +20,32 @@
     {
       "path": "renault-mulgeum/approach_arkana.html",
       "bytes": 19548,
-      "sha256": "17d424221255b0df0879661da0cc9edf3a93415f78d07fb9f64cfd789628891f"
+      "sha256": "602689fb408da441e0791f761cea0e3f5cccb178f598d442120262f5b4de0e70"
     },
     {
       "path": "renault-mulgeum/approach_filante.html",
       "bytes": 19718,
-      "sha256": "5333affae6c4e280a3294b3fda395c760232e13b6e2454504f591e231f826430"
+      "sha256": "cf92f1369ef0cc82162664d5e1fe4485700e2cb4e3e523ee41977899e2608b05"
     },
     {
       "path": "renault-mulgeum/approach_koleos.html",
       "bytes": 20217,
-      "sha256": "49cc076f054ce10487aa6ce313bca75227e98318223cf95660bffe80cbfbd6eb"
+      "sha256": "f12043b927a56337ef2b962342cdf58145f40933b03bb5ea0caf0d309fc79e67"
     },
     {
       "path": "renault-mulgeum/book_arkana.html",
       "bytes": 12206,
-      "sha256": "c9a8fa8cbb3747cd6a579bc7aa230ae9e0a7abf9d904ad1addf9a8eae1cbdff4"
+      "sha256": "c05eb8b669fffd6ce8bb447c5bac49bff48689c620a711837e5de895049e4548"
     },
     {
       "path": "renault-mulgeum/book_filante.html",
       "bytes": 12376,
-      "sha256": "c6615e57697f2f3116111eca3f2db2db6b04b5ca079797cc9ed06fd0c54adc58"
+      "sha256": "d4c198824cfe9f4b5c276946f56019947000dbdab2f6af97cc4a8657f480ea01"
     },
     {
       "path": "renault-mulgeum/book_koleos.html",
       "bytes": 12875,
-      "sha256": "8af33e288b2724f3aa52e0151a6599e12d9537d0c5f35b910e32fbe2e57dd873"
+      "sha256": "10a79e6cca282f2b60ed9e6414a12dc510a7a7c90a1d8879de3cdbbfb59eca50"
     },
     {
       "path": "renault-mulgeum/browser-assist.js",
@@ -55,7 +55,7 @@
     {
       "path": "renault-mulgeum/browser-help.html",
       "bytes": 3781,
-      "sha256": "214134f393a936a2e2663a289ddfcd9228f762d0c21ed32d52537b7677dff152"
+      "sha256": "db8a4602a0b946295e1c4c265eb4623fa1a6b61980538a1d417bbf48e44a38e5"
     },
     {
       "path": "renault-mulgeum/builder-commerce.js",
@@ -95,7 +95,7 @@
     {
       "path": "renault-mulgeum/find-renault.html",
       "bytes": 8127,
-      "sha256": "a8bd2b0fb519755ae1ade26ffdabfa26fd6c5a5c63d8cc8689859f77c76eaf28"
+      "sha256": "11a25cfedfe39c0556c1dc07dbb063efc6c1860f26f7504c18ef6b28863e00d0"
     },
     {
       "path": "renault-mulgeum/finder-core.js",
@@ -140,22 +140,22 @@
     {
       "path": "renault-mulgeum/index.html",
       "bytes": 43930,
-      "sha256": "2dc5d2abd2b9e1163098b8d4133d4106881f9caa4d4f60f22b107d04cd011054"
+      "sha256": "14fdec43f384daf9f89d69fc408c25162a9c9af044fb7a0fd15c336c6a49e5ab"
     },
     {
       "path": "renault-mulgeum/model_arkana.html",
       "bytes": 43882,
-      "sha256": "17332ccd35ffad8e8c509463fc6b0715a20ed32a1ad9fe3956a06a3c524d9929"
+      "sha256": "475ee0af94f247caef514c95fbee12249e87aa683f4de04b3d9ab7e9a6e6d0f1"
     },
     {
       "path": "renault-mulgeum/model_filante.html",
       "bytes": 43910,
-      "sha256": "9f2be3732f0add1ac4ca8ff62f2fc55d496d0447aba12ef313ad23286d490889"
+      "sha256": "926549c288dc7900355f4bbe756bea33abc4b332869a9f467ce55b18cc116ef5"
     },
     {
       "path": "renault-mulgeum/model_koleos.html",
       "bytes": 44044,
-      "sha256": "5fce5e97c3e3f09cc3dfd03ee727ccb5b663690912a24f8b7d53d4273ef41114"
+      "sha256": "1d50389cc1bfc75aa870bc6d54903b3e117573a81cf0e4a36178979d3904986a"
     },
     {
       "path": "renault-mulgeum/money-input.js",
@@ -455,7 +455,7 @@
     {
       "path": "crm/index.html",
       "bytes": 8519,
-      "sha256": "77ea7724034274350c904b43d71362cd0b75db41ddbf517308d80afa9b9fc071"
+      "sha256": "fb2d0ce8e0966cada429d8227dcc9df1379339a2f0c4e8abc855a8cab415e596"
     },
     {
       "path": "crm/postcode-popup.html",
@@ -554,8 +554,8 @@
     },
     {
       "path": "crm/crm-catalog.js",
-      "bytes": 22503,
-      "sha256": "9d091f4e78c6d1d624bcc6eb8836fae6237af19b2e2328a7e7c7a33c410eb119"
+      "bytes": 22885,
+      "sha256": "292ef2d18f4c1f44cc5628ff00f1288d587822664a000b08365431c6df82e110"
     },
     {
       "path": "crm/crm-workspace.js",
@@ -583,5 +583,5 @@
       "sha256": "e2796abe37ac56243d56acf573de61ae752afb4c37281ca5bb335bb9773bb7d9"
     }
   ],
-  "sourceCommit": "2a7e1f89bcd27ec8c9e10b6b6ac92769b507a101"
+  "sourceCommit": "3ed523547008a55b195ed23abbebb143c230dfb8"
 }
