@@ -1,6 +1,6 @@
 {
-  "release": "purchase-stages-20261124-01",
-  "builtAt": "2026-11-23T16:08:27.040Z",
+  "release": "joint-stage-20261124-01",
+  "builtAt": "2026-11-23T16:15:01.882Z",
   "files": [
     {
       "path": "renault-mulgeum/advisor.css",
@@ -585,33 +585,33 @@
     {
       "path": "crm/crm.js",
       "bytes": 31035,
-      "sha256": "2dc0af7c39a98aab1cc33387ab88340fb3c42405d1970534016df9825454072e"
+      "sha256": "98afc3efd2e435da2d59e805c45256703ff6127cb5006b53e012f0ede0b174b1"
     },
     {
       "path": "crm/crm-workflow.js",
       "bytes": 6061,
-      "sha256": "6ff87b03ac4bfcdca6d7476e0a2c39a8b908e2468938ed7c113b31e860fd8159"
+      "sha256": "8bf55a163b410219a68246fd449d1e93b5e03956b92f34f57e6503ef7a42c29e"
     },
     {
       "path": "crm/crm-customer-list.js",
       "bytes": 2769,
-      "sha256": "7ae2c66aa5bbecd338900b3fb5e9ed8fd5e1c3485960d95b27c62fa7f9284b1f"
+      "sha256": "84b24aa1095c9df68a0950851329d73e80623b228e3fd256b24c6f06b0c58537"
     },
     {
       "path": "crm/crm-bulk-edit.js",
       "bytes": 4248,
-      "sha256": "25962b826ef5d04daf41ad1284def48c8ea2b00e492468a812f0aa2f0beaefcb"
+      "sha256": "821b5599873b4ef14d7898ba5bdea9b2dc31904ad301144cbdd1ab2c3db127f9"
     },
     {
       "path": "crm/crm-import-core.js",
-      "bytes": 9548,
-      "sha256": "cd43ba1fcc53a817c99d04e16ba66d9063cc2c77f45272d73b74b68770111e73"
+      "bytes": 9578,
+      "sha256": "164fdc7f8a12c7ecaee9da834d9ede8b4645cb794464b87e3d420f34c808a97a"
     },
     {
       "path": "crm/index.html",
-      "bytes": 9365,
-      "sha256": "c893cc0aafea073159c6c1d4a9f8872d66827eae22e240de162ee633aa49d62e"
+      "bytes": 9345,
+      "sha256": "df303c4d03f21746c116e851518c0dc9f7a4bcfe00c1d676aa590a3205150fd8"
     }
   ],
-  "sourceCommit": "6e3a0e2bad1c3789193e8bb2f9925b7ca7f665b2"
+  "sourceCommit": "d2f0b0f6fbc61c5187f27b24999c8e21a6d77d04"
 }
