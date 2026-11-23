@@ -1,6 +1,6 @@
 {
-  "release": "finance-layout-20261123-05",
-  "builtAt": "2026-11-23T05:33:09.989Z",
+  "release": "save-close-20261123-01",
+  "builtAt": "2026-11-23T14:51:09.047Z",
   "files": [
     {
       "path": "renault-mulgeum/advisor.css",
@@ -328,11 +328,6 @@
       "sha256": "5d2f6de8c8e0ce3e6d66800d209c7c5f6cd3a83dedf0541ef72bfd1d2554acea"
     },
     {
-      "path": "crm/crm-finance.js",
-      "bytes": 17293,
-      "sha256": "f4ebdd86e386b8f914fec5b5246c26a816d5a5b51da041b098b3a4e0ce5464cd"
-    },
-    {
       "path": "crm/crm-form.js",
       "bytes": 11151,
       "sha256": "bfe35f6dd753ee7dbaaa0a5abee1d4027a4db2a83031f2810aee3562f2622671"
@@ -356,11 +351,6 @@
       "path": "crm/crm-import.css",
       "bytes": 1915,
       "sha256": "ee7ba671075ffd9ee32a0ab971623742925616c91979a3f1e4013c6943a6fd91"
-    },
-    {
-      "path": "crm/crm-import.js",
-      "bytes": 11195,
-      "sha256": "f23ab960052846c272fd49b8248bf3c0387992997a159957415edee0193c7a13"
     },
     {
       "path": "crm/crm-ledger-ui.css",
@@ -421,11 +411,6 @@
       "path": "crm/crm.css",
       "bytes": 22968,
       "sha256": "d8abdd2f04b16f35f3ca5c4170500beca09a38bef0ae7aef2abb1379cddc905e"
-    },
-    {
-      "path": "crm/crm.js",
-      "bytes": 30133,
-      "sha256": "2e92c90b35ebf871fee11b676654dfa5c457f28ef9136439fe86c31292a49755"
     },
     {
       "path": "crm/domain.js",
@@ -563,11 +548,6 @@
       "sha256": "813fe496e13763b64dd274b26278a5fc80557225e40df4f4a3d8534ae288f0b3"
     },
     {
-      "path": "crm/index.html",
-      "bytes": 8735,
-      "sha256": "cf372a0d4544788cebf33aed7dafb90bfdd25be35cfd779863681555bc7995c9"
-    },
-    {
       "path": "crm/crm-catalog.js",
       "bytes": 24951,
       "sha256": "42256c6a8d10ebf2fb298eedd25c61e932050e0972e69830d03e53b84283952a"
@@ -581,7 +561,27 @@
       "path": "crm/crm-settings.css",
       "bytes": 13279,
       "sha256": "06f2dcb5f593491e361fc0d48ca27ec5336d4255219057623f77e4ee60a5dc94"
+    },
+    {
+      "path": "crm/crm.js",
+      "bytes": 30477,
+      "sha256": "ebe63ecd575bced31925ebb59a8aaef2732704f61f0f956d346f462ea1cf21a6"
+    },
+    {
+      "path": "crm/crm-finance.js",
+      "bytes": 17313,
+      "sha256": "2f19773f8219671dc0ee5a5d8e31d288674b6c5270284506f94b3dcc3c678e08"
+    },
+    {
+      "path": "crm/crm-import.js",
+      "bytes": 11220,
+      "sha256": "440489d6fc8ef32adac78ebb93c11f89483b2aa71931a43c303931389bd6ae9f"
+    },
+    {
+      "path": "crm/index.html",
+      "bytes": 8591,
+      "sha256": "72f5a242c26963a62e4ec5244f47e6f178d7e89187adbb126e33ea18388e9521"
     }
   ],
-  "sourceCommit": "503bdf1f527b24507b4194e2d217a071979f47b4"
+  "sourceCommit": "16492617f57640393cf66115f30b26f4ab849aad"
 }
