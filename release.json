@@ -1,6 +1,6 @@
 {
-  "release": "crm-search-20261124-02",
-  "builtAt": "2026-11-23T18:07:08.054Z",
+  "release": "ledger-mobile-20261124-01",
+  "builtAt": "2026-11-23T18:21:09.401Z",
   "files": [
     {
       "path": "renault-mulgeum/advisor.css",
@@ -568,19 +568,9 @@
       "sha256": "164fdc7f8a12c7ecaee9da834d9ede8b4645cb794464b87e3d420f34c808a97a"
     },
     {
-      "path": "crm/crm-ledger-ui.css",
-      "bytes": 8407,
-      "sha256": "daa69c24a83ed10379134ee24b0df090ce190b209c6588449457b189f078c9b7"
-    },
-    {
       "path": "crm/crm.js",
       "bytes": 33858,
       "sha256": "b8dcaf3d7aa61c5cf5aebc3896d370bc6b7f84ffe240c529acf6538c1d39797a"
-    },
-    {
-      "path": "crm/crm-finance.js",
-      "bytes": 17596,
-      "sha256": "0e0211730874a56261571e8a1e5824116e831906455580b56f4729f75daab6c8"
     },
     {
       "path": "crm/crm-sms.js",
@@ -593,11 +583,6 @@
       "sha256": "78539eef01ded256a9cae74335b36319016054bbb6c946d9bfa7419a09dd5a06"
     },
     {
-      "path": "crm/crm-workspace.js",
-      "bytes": 4254,
-      "sha256": "f4709fb239332e244ff193929a7813589d6d7cdaedd302d3b9a3d6f427bbfc54"
-    },
-    {
       "path": "crm/crm-workspace.css",
       "bytes": 12866,
       "sha256": "5ba0022c0561ce4aa6b2552a9e240b57437f32303b9a1d80575c75acedcf4219"
@@ -606,7 +591,22 @@
       "path": "crm/crm-catalog.js",
       "bytes": 25344,
       "sha256": "7cf23da1fc12f426a3969108d85eef3eccb35c9ac8cb1a7e0de024e7308a18fa"
+    },
+    {
+      "path": "crm/crm-finance.js",
+      "bytes": 19010,
+      "sha256": "80f9217a484012469706f2735887adaa7dea05a3f843f6ee86eecccbe2b22a6b"
+    },
+    {
+      "path": "crm/crm-ledger-ui.css",
+      "bytes": 14778,
+      "sha256": "f8bda7411d710d3f0c7e8331905569e593675b7030384026d394395cb9d01d64"
+    },
+    {
+      "path": "crm/crm-workspace.js",
+      "bytes": 4298,
+      "sha256": "163a55ab2e117e7e88b064c464a34b216df4dbc46994612c697b1465e155fb72"
     }
   ],
-  "sourceCommit": "1ec64f957a1a0aa98dda86ccb05a09d249141f65"
+  "sourceCommit": "0cefb9b6c9d0d4a222b37ebfda99953de586e9f8"
 }
