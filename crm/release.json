@@ -1,13 +1,17 @@
 {
-  "release": "crm-studio-v2-live-20261124",
-  "sourceCommit": "cab23fe75f1875b7db8c728e42883618d1d2840f",
-  "previousPublicCommit": "44cd6016c54da60068508ea34324639eb74d7d17",
-  "backupBranch": "backup/crm-v1-before-v2-20261124",
-  "api": "existing-crm-api",
-  "databaseMigration": false,
+  "release": "crm-studio-v2-templates-20261124",
+  "sourceCommit": "4df3ed3471bafe9fdf67a0d1fd036986c71bb8ff",
+  "previousPublicCommit": "a39a4636f98baea79592c99044f6825dedf19a70",
+  "features": [
+    "sms-template-save-load",
+    "shared-direct-indirect-templates",
+    "template-optimistic-overwrite"
+  ],
+  "databaseMigration": "crm_sms_templates",
+  "edgeVersion": 22,
   "validation": {
-    "frontendTests": 49,
-    "apiSmsRecoveryRlsTests": 5,
-    "protectedBuild": true
+    "frontendTests": 53,
+    "protectedBuild": true,
+    "syntheticBrowserSaveLoad": true
   }
 }
