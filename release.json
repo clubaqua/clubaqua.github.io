@@ -519,8 +519,8 @@
     },
     {
       "path": "renault-mulgeum/find-renault.html",
-      "bytes": 8942,
-      "sha256": "5de87b4ff4e9b9d4a33b952374e8527f6710d29710c3e25d3de5e410b6c9415c"
+      "bytes": 8921,
+      "sha256": "fcb935159dccc07d4c4fb1d18a1b90eb95c57168006ac5c6ec38eecef4146299"
     },
     {
       "path": "renault-mulgeum/finder-core.js",
@@ -549,8 +549,8 @@
     },
     {
       "path": "renault-mulgeum/finder.js",
-      "bytes": 44749,
-      "sha256": "709d7151a2b4dc923a9aa3385110acbbec256c638e2947dff979900c37722e67"
+      "bytes": 44803,
+      "sha256": "6ad2e755183fea074710c5bf2659353093875c68222c34af44936fd47228cf31"
     },
     {
       "path": "renault-mulgeum/guidebook.css",
@@ -676,5 +676,6 @@
   "sourceCommit": "0cefb9b6c9d0d4a222b37ebfda99953de586e9f8",
   "scope": "renault-mulgeum/ only (crm/, root index.html, privacy.html unchanged)",
   "crmPatch": "reserve-20261125: 방문예약·시승예약 단계 추가(운영본 기준 최소 변경)",
-  "visitPatch": "site-fb1c-20261125: 예약 완료 안내 간소화 + 새로고침 없이 재예약"
+  "visitPatch": "site-fb1c-20261125: 예약 완료 안내 간소화 + 새로고침 없이 재예약",
+  "finderPatch": "site-qa-20261125: 구성 저장에서 고객정보 제거"
 }
