@@ -284,18 +284,18 @@
     },
     {
       "path": "renault-mulgeum/approach_arkana.html",
-      "bytes": 20377,
-      "sha256": "30f8c8c40b790473f225add0f9fca3558147ce734b52b24b716f64b929cb4da8"
+      "bytes": 20501,
+      "sha256": "f2f4cf4cc6d2ac06fc57bd061e68345739d67040a82ea7cc9d234f64f5bccd2c"
     },
     {
       "path": "renault-mulgeum/approach_filante.html",
-      "bytes": 20548,
-      "sha256": "4193f7de4a7f1f14141ebd8a6e406cf25b1c458ce8ea8441a7a93bd1a5b88b53"
+      "bytes": 20672,
+      "sha256": "b80a30928ab41491d5cc5e6179dc2248af4ccf46433d5af08e22a4bf2e3473cd"
     },
     {
       "path": "renault-mulgeum/approach_koleos.html",
-      "bytes": 21046,
-      "sha256": "5e203b85b1cdfbb7ec15443db0301cef1828c85a61c6f0aee5cc7b5f0e709745"
+      "bytes": 21170,
+      "sha256": "e2cce966ac43fc7b8e96ad23c178e3491c80a882cf5ef363a93157d952e2d23d"
     },
     {
       "path": "renault-mulgeum/approach.css",
@@ -474,8 +474,8 @@
     },
     {
       "path": "renault-mulgeum/crm-bridge.js",
-      "bytes": 6588,
-      "sha256": "f9a3948c1716c30755ecf3097ad16b3e2d30fe487096132c4c1d437937378915"
+      "bytes": 6585,
+      "sha256": "edd5aa120dd2ef17f640b5d940d00480abc0c188665550b2468e392c2ea3037e"
     },
     {
       "path": "renault-mulgeum/customer-context.js",
@@ -519,8 +519,8 @@
     },
     {
       "path": "renault-mulgeum/find-renault.html",
-      "bytes": 8921,
-      "sha256": "fcb935159dccc07d4c4fb1d18a1b90eb95c57168006ac5c6ec38eecef4146299"
+      "bytes": 9026,
+      "sha256": "8d152dc7e2505d21495076489b550179fc14d86f8910b8c8e985630830737850"
     },
     {
       "path": "renault-mulgeum/finder-core.js",
@@ -677,5 +677,6 @@
   "scope": "renault-mulgeum/ only (crm/, root index.html, privacy.html unchanged)",
   "crmPatch": "reserve-20261125: 방문예약·시승예약 단계 추가(운영본 기준 최소 변경)",
   "visitPatch": "site-fb1c-20261125: 예약 완료 안내 간소화 + 새로고침 없이 재예약",
-  "finderPatch": "site-qa-20261125: 구성 저장에서 고객정보 제거"
+  "finderPatch": "site-qa-20261125: 구성 저장에서 고객정보 제거",
+  "bridgePatch": "site-wording-20261125: 고객 저장 안내 문구 정리"
 }
