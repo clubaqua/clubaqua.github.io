@@ -1,0 +1,13 @@
+{
+  "release": "crm-studio-v2-live-20261124",
+  "sourceCommit": "cab23fe75f1875b7db8c728e42883618d1d2840f",
+  "previousPublicCommit": "44cd6016c54da60068508ea34324639eb74d7d17",
+  "backupBranch": "backup/crm-v1-before-v2-20261124",
+  "api": "existing-crm-api",
+  "databaseMigration": false,
+  "validation": {
+    "frontendTests": 49,
+    "apiSmsRecoveryRlsTests": 5,
+    "protectedBuild": true
+  }
+}
