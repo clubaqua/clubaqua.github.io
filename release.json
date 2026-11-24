@@ -519,13 +519,13 @@
     },
     {
       "path": "renault-mulgeum/find-renault.html",
-      "bytes": 9026,
-      "sha256": "8d152dc7e2505d21495076489b550179fc14d86f8910b8c8e985630830737850"
+      "bytes": 9005,
+      "sha256": "e2d93e5b42939ac10d57d3632eb2282a146c8c4416aa1edd34b290fc5da7dfb3"
     },
     {
       "path": "renault-mulgeum/finder-core.js",
-      "bytes": 41343,
-      "sha256": "0cb19629b687863b644b66bb99df8a72e9815e8c378b986b1c7bfe0dab951b19"
+      "bytes": 44814,
+      "sha256": "66cbcb61d989b139a41b2ab6242c77ae0d7ef4afca88b8378fd8fe0988cab0b0"
     },
     {
       "path": "renault-mulgeum/finder-leads.js",
@@ -544,13 +544,13 @@
     },
     {
       "path": "renault-mulgeum/finder.css",
-      "bytes": 23225,
-      "sha256": "84297c698e01e31795c3ca4f74204d4695ed461748e6378ecba34a5b376b3db2"
+      "bytes": 24299,
+      "sha256": "65799aa599a8e464b0fc57c8077aea64ae87fdb61cb82b0ad79c07230d1a7216"
     },
     {
       "path": "renault-mulgeum/finder.js",
-      "bytes": 44803,
-      "sha256": "6ad2e755183fea074710c5bf2659353093875c68222c34af44936fd47228cf31"
+      "bytes": 48714,
+      "sha256": "354978b39770f076b45b08501e151e57c0e8053d518c475a6ca0e4d802fefa78"
     },
     {
       "path": "renault-mulgeum/guidebook.css",
@@ -678,5 +678,6 @@
   "crmPatch": "reserve-20261125: 방문예약·시승예약 단계 추가(운영본 기준 최소 변경)",
   "visitPatch": "site-fb1c-20261125: 예약 완료 안내 간소화 + 새로고침 없이 재예약",
   "finderPatch": "site-qa-20261125: 구성 저장에서 고객정보 제거",
-  "bridgePatch": "site-wording-20261125: 고객 저장 안내 문구 정리"
+  "bridgePatch": "site-wording-20261125: 고객 저장 안내 문구 정리",
+  "finderColour": "site-colour-20261125: 선호 색상 순위·추천가 합산"
 }
