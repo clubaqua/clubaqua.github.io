@@ -514,8 +514,8 @@
     },
     {
       "path": "renault-mulgeum/extras.css",
-      "bytes": 6478,
-      "sha256": "fd8d2c6ac6b5ce2cdd6a1b611d01047c2dca64f6e19aa306bfec462eef5f4fc4"
+      "bytes": 6513,
+      "sha256": "de72e91c4d97a52e0a8f5d7221e999f127cec673f7cbd94466dfa02f9ce34f26"
     },
     {
       "path": "renault-mulgeum/find-renault.html",
@@ -650,12 +650,12 @@
     {
       "path": "renault-mulgeum/visit.html",
       "bytes": 5268,
-      "sha256": "8a5f9d3847dc6631ecb748958738338dcf3ad1236df695eb28ac4008f798d8a6"
+      "sha256": "3f1fd1100a18f3600c8ead7d866a27a05080585337cfb177385a874ba5aace09"
     },
     {
       "path": "renault-mulgeum/visit.js",
-      "bytes": 4825,
-      "sha256": "1dce896dcb841a385e864114c634491a7595633730ad41c758d4a8503c5622e6"
+      "bytes": 5298,
+      "sha256": "495adbbc4b0e501038f6452cab393bee884acb160d135317f2594f06c67d06a3"
     },
     {
       "path": "renault-mulgeum/workspace-theme.css",
@@ -676,5 +676,5 @@
   "sourceCommit": "0cefb9b6c9d0d4a222b37ebfda99953de586e9f8",
   "scope": "renault-mulgeum/ only (crm/, root index.html, privacy.html unchanged)",
   "crmPatch": "reserve-20261125: 방문예약·시승예약 단계 추가(운영본 기준 최소 변경)",
-  "visitPatch": "site-fb1b-20261125: 예약 완료 안내 간소화"
+  "visitPatch": "site-fb1c-20261125: 예약 완료 안내 간소화 + 새로고침 없이 재예약"
 }
