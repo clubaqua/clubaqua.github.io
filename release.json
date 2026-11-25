@@ -273,6 +273,11 @@
       "sha256": "724d324b90f2ed91692565f0d33c31b8be2eb8e36dc4ecb185530c0fad167771"
     },
     {
+      "path": "privacy.html",
+      "bytes": 4826,
+      "sha256": "02057a7ea5d043fd82310045f84c88ddb0d2945e69b5d5122abdc90371fcd74b"
+    },
+    {
       "path": "README.md",
       "bytes": 155,
       "sha256": "bead90639ce9eccb6316efca4591aa6336d0067078ad27250a7c39d5c667b454"
